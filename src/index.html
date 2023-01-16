@@ -6,14 +6,69 @@
     <title>Tierdom</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "s-tier": "#e07a79",
+              "a-tier": "#ebba79",
+              "b-tier": "#f2ed82",
+              "c-tier": "#a9d86d",
+              "d-tier": "#91b8e6",
+              "e-tier": "#7879c1",
+              "f-tier": "#ce86ca",
+            }
+          }
+        }
+      }
+    </script>
   </head>
   <body class="min-h-screen bg-gradient-to-b from-slate-800 to-slate-900">
-    <div class="animate-pulse grid h-screen place-items-center" id="app-loading-indicator">
+    <div id="app-loading-indicator" class="animate-pulse grid h-screen place-items-center">
       <p class="text-white text-6xl">
         Loading application...
       </p>
     </div>
-    <div id="app"></div>
+    <div id="app" class="hidden">
+      <nav class="text-white flex gap-2 p-2">
+        <a class="px-4 py-2 bg-slate-900/50 hover:bg-slate-700/50" href="/">Home</a>
+        <a class="px-4 py-2 bg-slate-900/50 hover:bg-slate-700/50" href="/games">Games</a>
+        <a class="px-4 py-2 bg-slate-900/50 hover:bg-slate-700/50" href="/movies">Movies</a>
+        <a class="px-4 py-2 bg-slate-900/50 hover:bg-slate-700/50" href="/books">Books</a>
+        <a class="px-4 py-2 bg-slate-900/50 hover:bg-slate-700/50" href="/restaurants">Restaurants</a>
+      </nav>
+      <div class="tier-list flex flex-col gap-1 border-2 border-black/50 bg-black/50 m-2">
+        <div id="S-tier" class="tier flex min-h-[16rem] bg-neutral-800/50 font-bold text-4xl text-slate-900/90">
+          <div class="basis-16 shrink-0 mr-2 grid place-items-center bg-s-tier">S</div>
+          <div class="items flex flex-wrap gap-1 p-1"></div>
+        </div>
+        <div id="A-tier" class="tier flex min-h-[16rem] bg-neutral-800/50 font-bold text-4xl text-slate-900/90">
+          <div class="basis-16 shrink-0 mr-2 grid place-items-center bg-a-tier">A</div>
+          <div class="items flex flex-wrap gap-1 p-1"></div>
+        </div>
+        <div id="B-tier" class="tier flex min-h-[16rem] bg-neutral-800/50 font-bold text-4xl text-slate-900/90">
+          <div class="basis-16 shrink-0 mr-2 grid place-items-center bg-b-tier">B</div>
+          <div class="items flex flex-wrap gap-1 p-1"></div>
+        </div>
+        <div id="C-tier" class="tier flex min-h-[16rem] bg-neutral-800/50 font-bold text-4xl text-slate-900/90">
+          <div class="basis-16 shrink-0 mr-2 grid place-items-center bg-c-tier">C</div>
+          <div class="items flex flex-wrap gap-1 p-1"></div>
+        </div>
+        <div id="D-tier" class="tier flex min-h-[16rem] bg-neutral-800/50 font-bold text-4xl text-slate-900/90">
+          <div class="basis-16 shrink-0 mr-2 grid place-items-center bg-d-tier">D</div>
+          <div class="items flex flex-wrap gap-1 p-1"></div>
+        </div>
+        <div id="E-tier" class="tier flex min-h-[16rem] bg-neutral-800/50 font-bold text-4xl text-slate-900/90">
+          <div class="basis-16 shrink-0 mr-2 grid place-items-center bg-e-tier">E</div>
+          <div class="items flex flex-wrap gap-1 p-1"></div>
+        </div>
+        <div id="F-tier" class="tier flex min-h-[16rem] bg-neutral-800/50 font-bold text-4xl text-slate-900/90">
+          <div class="basis-16 shrink-0 mr-2 grid place-items-center bg-f-tier">F</div>
+          <div class="items flex flex-wrap gap-1 p-1"></div>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
