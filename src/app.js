@@ -40,8 +40,10 @@ document.addEventListener("DOMContentLoaded", async () => {
       this.code = dto.code;
       this.title = dto.title;
       this.rating = dto.rating;
+      this.hasArt = dto.hasArt;
       this.color = dto.color;
       this.description = dto.description;
+      this.props = dto.props;
 
       // translate percentage to range [-15, 135] for hue rotation (red to green)
       const hue = -30 + 160 * this.rating / 100;
@@ -72,14 +74,30 @@ document.addEventListener("DOMContentLoaded", async () => {
     tierList.tiers.forEach(tier => {
       const $tier = querySelect(`#${tier.level}-tier .items`);
       const newNodes = tier.items.map(i => {
-        const $item = createEl("div", "flex flex-col p-2 border-2 border-black bg-slate-600/50 w-48 h-48");
-        const $title = $item.appendChild(createEl("h3", "text-lg text-white"));
+        const $item = createEl("div", "group flex flex-col border-2 border-black bg-slate-600/50 w-48 h-48 bg-center bg-cover cursor-pointer");
+        if (i.hasArt) {
+          $item.style.backgroundImage = `linear-gradient(rgb(20 20 30 / 0.7), rgb(20 20 30 / 0.7)), url('art/${i.code}.png')`;
+        }
+
+        const $title = $item.appendChild(createEl("h3", "p-1 pr-8 group-hover:pr-0 transition-all text-xl font-bold text-slate-100 group-hover:text-2xl"));
         $title.innerText = i.title;
-        const $rating = $item.appendChild(createEl("div", `
-          h-[2px] bg-black/50 relative
-          mt-auto
-          after:content-[' '] after:h-full after:w-[${i.rating}%] after:bg-[${i.ratingColor}] after:inline-block after:absolute
+        $title.style.textShadow = "black 1px 1px 4px"; // not in Tailwind yet
+
+
+        const $row = $item.appendChild(createEl("div", "flex items-end mt-auto"));
+
+        const $rating = $row.appendChild(createEl("div", `transition-all mx-1 text-slate-400/75 group-hover:text-slate-200 group-hover:text-xl font-bold`));
+        $rating.innerText = `${i.rating} / 100`;
+
+        const $platformIcon = $row.appendChild(createEl("img", "h-12 transition-all opacity-50 group-hover:opacity-75 group-hover:scale-[1.25] origin-bottom-right invert ml-auto mr-1"));
+        $platformIcon.src = `img/icons/${i.props["platform"]}.png`;
+
+        const $ratingBar = $item.appendChild(createEl("div", `
+          h-[4px] group-hover:h-[16px] transition-all bg-slate-400/50 relative
+          m-1 mt-1
+          after:content-[' '] after:h-full after:w-[${i.rating}%] after:bg-[${i.ratingColor}] after:inline-block after:absolute after:left-0
         `));
+
         return $item;
       });
       $tier.replaceChildren(...newNodes);
