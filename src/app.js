@@ -74,12 +74,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     tierList.tiers.forEach(tier => {
       const $tier = querySelect(`#${tier.level}-tier .items`);
       const newNodes = tier.items.map(i => {
-        const $item = createEl("div", "group flex flex-col border-2 border-black bg-slate-600/50 w-48 h-48 bg-center bg-cover cursor-pointer");
+        const $item = createEl("div", `
+          group flex flex-col border-2 border-black bg-slate-600/50
+          w-[33.3333333%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%] aspect-square
+          bg-center bg-cover cursor-pointer`);
         if (i.hasArt) {
           $item.style.backgroundImage = `linear-gradient(rgb(20 20 30 / 0.7), rgb(20 20 30 / 0.7)), url('art/${i.code}.png')`;
         }
 
-        const $title = $item.appendChild(createEl("h3", "p-1 pr-8 group-hover:pr-0 transition-all text-xl font-bold text-slate-100 group-hover:text-2xl"));
+        const $title = $item.appendChild(createEl("h3", "p-1 pt-0 pr-8 group-hover:pr-0 transition-all md:text-xl font-bold text-slate-100 group-hover:text-2xl"));
         $title.innerText = i.title;
         $title.style.textShadow = "black 1px 1px 4px"; // not in Tailwind yet
 
