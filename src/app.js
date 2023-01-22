@@ -84,13 +84,13 @@ document.addEventListener("DOMContentLoaded", async () => {
         $title.style.textShadow = "black 1px 1px 4px"; // not in Tailwind yet
 
 
-        const $row = $item.appendChild(createEl("div", "flex items-end mt-auto"));
+        const $row = $item.appendChild(createEl("div", "flex items-end mt-auto transition-all font-bold text-slate-200 opacity-40 group-hover:opacity-90 group-hover:text-xl uppercase"));
 
-        const $rating = $row.appendChild(createEl("div", `transition-all mx-1 text-slate-400/75 group-hover:text-slate-200 group-hover:text-xl font-bold`));
-        $rating.innerText = `${i.rating} / 100`;
+        const $rating = $row.appendChild(createEl("div", `mx-1`));
+        $rating.innerText = `${i.rating}/100`;
 
-        const $platformIcon = $row.appendChild(createEl("img", "h-12 transition-all opacity-50 group-hover:opacity-75 group-hover:scale-[1.25] origin-bottom-right invert ml-auto mr-1"));
-        $platformIcon.src = `img/icons/${i.props["platform"]}.png`;
+        const $platformIcon = $row.appendChild(createEl("span", "ml-auto mr-2"));
+        $platformIcon.innerText = i.props["platform"];
 
         const $ratingBar = $item.appendChild(createEl("div", `
           h-[4px] group-hover:h-[16px] transition-all bg-slate-400/50 relative
