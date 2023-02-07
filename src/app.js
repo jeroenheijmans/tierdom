@@ -71,6 +71,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   async function loadTierList(category) {
     const tierList = await fetchTierList(category);
+
+    const $modalContainer = document.getElementById('info-modal-container');
+    const $modalBackdrop = document.getElementById('info-modal-backdrop');
+    const $modalContent = document.getElementById('info-modal-content');
+    $modalBackdrop.addEventListener("click", () => {
+      $modalContainer.classList.toggle("hidden");
+    });
+
     tierList.tiers.forEach(tier => {
       const $tier = querySelect(`#${tier.level}-tier .items`);
       const newNodes = tier.items.map(i => {
@@ -86,7 +94,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         $title.innerText = i.title;
         $title.style.textShadow = "black 1px 1px 4px"; // not in Tailwind yet
 
-
         const $row = $item.appendChild(createEl("div", "flex items-end mt-auto transition-all font-bold text-slate-200 opacity-40 group-hover:opacity-90 group-hover:text-xl uppercase"));
 
         const $rating = $row.appendChild(createEl("div", `mx-1`));
@@ -100,6 +107,17 @@ document.addEventListener("DOMContentLoaded", async () => {
           m-1 mt-1
           after:content-[' '] after:h-full after:w-[${i.rating}%] after:bg-[${i.ratingColor}] after:inline-block after:absolute after:left-0
         `));
+
+        // Create modal content:
+        const $modalItemContent = createEl("div", `p-4`);
+        const $modalHeading = $modalItemContent.appendChild(createEl("h4", `text-xl`));
+        const $modalParagraph = $modalItemContent.appendChild(createEl("p", ``));
+        $modalHeading.innerText = i.title;
+        $modalParagraph.innerText = i.description;
+        $item.addEventListener("click", () => {
+          $modalContent.replaceChildren($modalItemContent);
+          $modalContainer.classList.toggle("hidden");
+        });
 
         return $item;
       });
