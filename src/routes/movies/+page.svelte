@@ -1,15 +1,9 @@
-<script lang="ts">
-  import ItemSquare from '../_components/ItemSquare.svelte';
-  import TierContainer from '../_components/TierContainer.svelte';
-  export let data: any;
-</script>
-
-<div class="flex flex-col gap-1 bg-black/50 my-2">
-  {#each data.tierList.tiers as tier}
-    <TierContainer {tier}>
-      {#each tier.items as item}
-        <ItemSquare {item} />
-      {/each}
-    </TierContainer>
-  {/each}
-</div>
+<h1 class="text-2xl font-bold mt-8">Movies Tier List</h1>
+<p>
+  This tier list is not implemented yet! Please check <a
+    href="https://www.imdb.com/user/ur54522962/ratings?sort=your_rating,desc"
+    target="_blank"
+    class="underline hover:text-slate-500"
+    rel="noreferrer">my IMDB ratings for the moment</a
+  >.
+</p>

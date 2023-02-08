@@ -27,9 +27,11 @@
     >
       <span>Books</span>
     </a>
-    <span class="border-2 border-transparent text-shadow font-bold bg-center bg-cover text-xl aspect-square min-w-[10rem] flex items-center justify-center bg-slate-100/20 hover:bg-slate-100/30 opacity-50">
-      <span class="text-center">Movies<br>(upcoming)</span>
-    </span>
+    <a href="/movies" class="border-2 border-slate-700 hover:border-slate-400 text-shadow font-bold bg-center bg-cover text-xl hover:text-2xl transition-all aspect-square min-w-[10rem] flex items-center justify-center bg-slate-100/20 hover:bg-slate-100/30"
+      style="background-image: linear-gradient(rgba(20, 20, 30, 0.5), rgba(20, 20, 30, 0.5)), url('art/movies/donnie-darko.png')"
+    >
+      <span>Movies</span>
+    </a>
     <span class="border-2 border-transparent text-shadow font-bold bg-center bg-cover text-xl aspect-square min-w-[10rem] flex items-center justify-center bg-slate-100/20 hover:bg-slate-100/30 opacity-50">
       <span class="text-center">Board Games<br>(upcoming)</span>
     </span>
