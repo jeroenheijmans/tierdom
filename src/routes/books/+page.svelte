@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { LayoutMode, layoutMode } from '../../lib/stores';
+  import ItemRectangle from '../_components/ItemRectangle.svelte';
   import ItemSquare from '../_components/ItemSquare.svelte';
   import TierContainer from '../_components/TierContainer.svelte';
   export let data: any;
@@ -8,7 +10,11 @@
   {#each data.tierList.tiers as tier}
     <TierContainer {tier}>
       {#each tier.items as item}
-        <ItemSquare {item} />
+        {#if $layoutMode === LayoutMode.rectangle}
+          <ItemRectangle {item} />
+        {:else}
+          <ItemSquare {item} />
+        {/if}
       {/each}
     </TierContainer>
   {/each}
