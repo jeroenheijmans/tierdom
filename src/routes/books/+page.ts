@@ -1,22 +1,10 @@
-import { ratingToHsl } from '../../lib/components/util';
-import type { Item } from '../_components/Item';
+import { books } from '../../data/books';
 import { TierList } from '../_components/TierList';
+import { Book } from './Book';
 
 export const load = () => {
-  const tierList = new TierList<Item>();
-  // TODO: Load list of items
-  tierList.level['S'].items.push({
-    tierLevel: 'S',
-    code: 'dummy-item',
-    title: 'Dummy Book',
-    rating: 95,
-    hasArt: false,
-    description: 'Dummy',
-    props: {},
-    mainProp: 'Dummy',
-    ratingColor: ratingToHsl(95),
-    artUrlSquare: null,
-  });
+  const tierList = new TierList<Book>();
+  books.forEach((b) => tierList.level[b.tierLevel].items.push(new Book(b)));
   return {
     tierList,
   };

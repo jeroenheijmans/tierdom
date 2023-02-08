@@ -2,7 +2,7 @@
   import type { Item } from './Item';
   export let item: Item;
 
-  export const gradient = 'linear-gradient(rgba(20, 20, 30, 0.5), rgba(20, 20, 30, 0.5))';
+  export const gradient = 'linear-gradient(rgba(20, 20, 30, 0.7), rgba(20, 20, 30, 0.7))';
   $: squareBackgroundStyle = item.hasArt ? `background-image: ${gradient}, url('${item.artUrlSquare}');` : `background-image: ${gradient};`;
 </script>
 
