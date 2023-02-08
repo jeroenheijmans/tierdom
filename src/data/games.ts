@@ -156,6 +156,7 @@ export const games = [
   { "tierLevel": "C", "rating": 60,  "hasArt": true, "props": { "platform": "pc" }, "code": "tricky-towers", "title": "Tricky Towers", "description": "" },
   { "tierLevel": "C", "rating": 60,  "hasArt": true, "props": { "platform": "pc" }, "code": "tomb-raider", "title": "Tomb Raider", "description": "" },
   { "tierLevel": "C", "rating": 59,  "hasArt": true, "props": { "platform": "pc" }, "code": "dragon-age-inquisition", "title": "Dragon Age: Inquisition", "description": "" },
+  { "tierLevel": "D", "rating": 60,  "hasArt": true, "props": { "platform": "pc" }, "code": "tick-tock-a-tale-for-two", "title": "Tick Tock: A Tale for Two", "description": "" },
   { "tierLevel": "D", "rating": 60,  "hasArt": true, "props": { "platform": "pc" }, "code": "little-nightmares", "title": "Little Nightmares", "description": "" },
   { "tierLevel": "D", "rating": 60,  "hasArt": true, "props": { "platform": "pc" }, "code": "prehistorik-2", "title": "Prehistorik 2", "description": "" },
   { "tierLevel": "D", "rating": 60,  "hasArt": true, "props": { "platform": "pc" }, "code": "prince-of-persia-2", "title": "Prince of Persia 2", "description": "" },
