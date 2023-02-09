@@ -13,6 +13,7 @@ export class Game implements Item {
   mainProp: string;
   ratingColor: string;
   artUrlSquare: string | null;
+  iconUrl: string | null;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(dto: any) {
@@ -24,8 +25,9 @@ export class Game implements Item {
     this.description = dto.description;
     this.props = dto.props;
 
+    this.mainProp = this.props['platform'];
     this.ratingColor = ratingToHsl(this.rating);
     this.artUrlSquare = `art/games/${this.code}.png`;
-    this.mainProp = this.props['platform'];
+    this.iconUrl = `img/controller-${this.mainProp}.svg`;
   }
 }

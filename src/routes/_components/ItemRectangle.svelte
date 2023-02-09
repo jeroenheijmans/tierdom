@@ -19,14 +19,21 @@
     <div class="h-[2px] w-full absolute bg-slate-400 opacity-70 transition-all group-hover:h-[8px] group-hover:opacity-80">
       <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`} />
     </div>
-    <h3 class="text-xl font-bold text-slate-100 text-shadow px-2 mt-2">
-      {item.title}
-    </h3>
-    <h2 class="font-bold text-slate-100 text-shadow px-2">
-      {item.rating}/100, <span class="uppercase">{item.mainProp}</span>
-    </h2>
-    <p class="p-2">
-      {item.description}
-    </p>
+    <div class="mt-2">
+      {#if !!item.iconUrl}
+        <div class="float-right p-1 md:p-2 shrink-0 opacity-75">
+          <img src={item.iconUrl} alt="controller for game system" class="invert max-h-12 md:max-h-20" />
+        </div>
+      {/if}
+      <h3 class="text-xl font-bold text-slate-100 text-shadow px-2">
+        {item.title}
+      </h3>
+      <h2 class="font-bold text-slate-100 text-shadow px-2">
+        {item.rating}/100, <span class="uppercase">{item.mainProp}</span>
+      </h2>
+      <p class="p-2">
+        {item.description}
+      </p>
+    </div>
   </div>
 </div>

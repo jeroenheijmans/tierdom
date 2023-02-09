@@ -10,4 +10,5 @@ export interface Item {
   mainProp: string;
   ratingColor: string;
   artUrlSquare: string | null;
+  iconUrl: string | null;
 }

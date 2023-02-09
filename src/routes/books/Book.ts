@@ -13,6 +13,7 @@ export class Book implements Item {
   mainProp: string;
   ratingColor: string;
   artUrlSquare: string | null;
+  iconUrl: string | null;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(dto: any) {
@@ -24,8 +25,9 @@ export class Book implements Item {
     this.description = dto.description;
     this.props = dto.props;
 
+    this.mainProp = this.props['year'];
     this.ratingColor = ratingToHsl(this.rating);
     this.artUrlSquare = `art/books/${this.code}.png`;
-    this.mainProp = this.props['year'];
+    this.iconUrl = null; // TODO
   }
 }
