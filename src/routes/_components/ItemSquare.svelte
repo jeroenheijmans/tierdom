@@ -16,9 +16,6 @@
   "
   style={squareBackgroundStyle}
 >
-  <button class="absolute top-0 bottom-0 right-0 left-0">
-    <span class="sr-only">Toggle rectangle mode</span>
-  </button>
   <h3
     class="
       p-1 pt-0 pr-8
