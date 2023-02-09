@@ -15,8 +15,11 @@
       <div class="w-full h-full bg-white/5 text-black flex justify-center items-center font-bold">x</div>
     {/if}
   </button>
-  <div>
-    <h3 class="text-xl font-bold text-slate-100 text-shadow px-2">
+  <div class="w-full group relative">
+    <div class="h-[2px] w-full absolute bg-slate-400 opacity-70 transition-all group-hover:h-[8px] group-hover:opacity-80">
+      <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`} />
+    </div>
+    <h3 class="text-xl font-bold text-slate-100 text-shadow px-2 mt-2">
       {item.title}
     </h3>
     <h2 class="font-bold text-slate-100 text-shadow px-2">
