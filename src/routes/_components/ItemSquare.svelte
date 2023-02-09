@@ -2,7 +2,7 @@
   import type { Item } from './Item';
   export let item: Item;
 
-  export const gradient = 'linear-gradient(rgba(20, 20, 30, 0.7), rgba(20, 20, 30, 0.7))';
+  export const gradient = 'linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6))';
   $: squareBackgroundStyle = item.hasArt ? `background-image: ${gradient}, url('${item.artUrlSquare}');` : `background-image: ${gradient};`;
 </script>
 
@@ -22,7 +22,7 @@
   <h3
     class="
       p-1 pt-0 pr-8
-      transition-all group-hover:pr-0 group-hover:text-2xl
+      transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl
       md:text-xl font-bold text-slate-100 text-shadow
     "
   >
