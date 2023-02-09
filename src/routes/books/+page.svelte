@@ -19,7 +19,7 @@
     <TierContainer {tier}>
       {#each tier.items as item}
         {#if $layoutMode === LayoutMode.rectangle}
-          <ItemRectangle {item} />
+          <ItemRectangle {item}>, ISBN {item.isbn}</ItemRectangle>
         {:else}
           <ItemSquare {item} />
         {/if}

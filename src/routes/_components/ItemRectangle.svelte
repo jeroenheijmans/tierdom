@@ -29,7 +29,7 @@
         {item.title}
       </h3>
       <h2 class="font-bold text-slate-100 text-shadow px-2">
-        {item.rating}/100, <span class="uppercase">{item.mainProp}</span>
+        {item.rating}/100, <span class="uppercase">{item.mainProp}</span><slot />
       </h2>
       <p class="p-2">
         {item.description}
