@@ -43,6 +43,7 @@ export const books = [
   { "tierLevel": "C", "rating": 69, "hasArt": true, "props": { "year": "2011", "isbn": "9780321767530" }, "code": "100-things-every-designer-needs-to-know-about-people", "title": "100 Things Every Designer Needs to Know about People", "description": `` },
   { "tierLevel": "C", "rating": 70, "hasArt": true, "props": { "year": "2007", "isbn": "9781590598382" }, "code": "smart-and-gets-things-done", "title": "Smart and Gets Things Done", "description": `` },
   { "tierLevel": "C", "rating": 80, "hasArt": true, "props": { "year": "2014", "isbn": "9781491950357" }, "code": "building-microservices", "title": "Building Microservices", "description": `` },
+  { "tierLevel": "C", "rating": 65, "hasArt": true, "props": { "year": "1996", "isbn": "9780345409461 " }, "code": "demon-haunted-world", "title": "The Demon-Haunted World", "description": `Decent book with enjoyable enough anecdotes. Right up my alley as a skeptic too. But it gets a bit repetitive, and is quite US-centric.` },
 
   //////////////////////////////// D
   { "tierLevel": "D", "rating": 60, "hasArt": true, "props": { "year": "2017", "isbn": "9781847941497" }, "code": "never-split-the-difference", "title": "Never Split the Difference", "description": `` },
