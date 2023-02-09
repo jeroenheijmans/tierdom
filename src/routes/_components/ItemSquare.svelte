@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { toggleRectangleMode } from '$lib/stores';
   import type { Item } from './Item';
   export let item: Item;
 
@@ -17,7 +16,7 @@
   "
   style={squareBackgroundStyle}
 >
-  <button on:click={toggleRectangleMode} class="absolute top-0 bottom-0 right-0 left-0">
+  <button class="absolute top-0 bottom-0 right-0 left-0">
     <span class="sr-only">Toggle rectangle mode</span>
   </button>
   <h3

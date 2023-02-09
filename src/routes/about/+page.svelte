@@ -18,46 +18,46 @@
   <table class="border-separate border-spacing-1 mt-4">
     <thead>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-700/50"></th>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-700/50">Proprietary Apps</th>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-700/50">Self-hosted</th>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-700/50"></th>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-700/50">Proprietary Apps</th>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-700/50">Self-hosted</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-left bg-slate-700/50">Can show lists</th>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-800">✅</td>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-teal-900/50">✅</td>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-left bg-slate-700/50">Can show lists</th>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-800">✅</td>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-teal-900/50">✅</td>
       </tr>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-left bg-slate-700/50">Feature rich</th>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-800">✅</td>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-teal-900/50">❌</td>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-left bg-slate-700/50">Feature rich</th>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-800">✅</td>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-teal-900/50">❌</td>
       </tr>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-left bg-slate-700/50">Minimalistic UI</th>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-800">❌</td>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-teal-900/50">✅</td>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-left bg-slate-700/50">Minimalistic UI</th>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-800">❌</td>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-teal-900/50">✅</td>
       </tr>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-left bg-slate-700/50">Uniform UI across lists</th>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-800">❌</td>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-teal-900/50">✅</td>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-left bg-slate-700/50">Uniform UI across lists</th>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-800">❌</td>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-teal-900/50">✅</td>
       </tr>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-left bg-slate-700/50">Own your words (e.g. reviews)</th>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-800">❌</td>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-teal-900/50">✅</td>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-left bg-slate-700/50">Own your words (e.g. reviews)</th>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-800">❌</td>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-teal-900/50">✅</td>
       </tr>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-left bg-slate-700/50">Own your data (the lists)</th>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-800">❌</td>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-teal-900/50">✅</td>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-left bg-slate-700/50">Own your data (the lists)</th>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-800">❌</td>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-teal-900/50">✅</td>
       </tr>
       <tr>
-        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-left bg-slate-700/50">Solution rating :-)</th>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-slate-800 font-bold">😐 55 / 100 😐</td>
-        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-center bg-teal-900/50 font-bold">🤩 90 / 100 🤩</td>
+        <th class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-left bg-slate-700/50">Solution rating :-)</th>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-slate-800 font-bold"><span class="whitespace-nowrap text-xs sm:text-base">😐 55 / 100 😐</span></td>
+        <td class="px-2 py-1 md:px-4 md:py-2 w-1/3 text-xs sm:text-base text-center bg-teal-900/50 font-bold"><span class="whitespace-nowrap text-xs sm:text-base">🤩 90 / 100 🤩</span></td>
       </tr>
     </tbody>
   </table>
