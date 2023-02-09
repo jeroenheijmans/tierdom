@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { toggleRectangleMode } from '$lib/stores';
   import type { Item } from './Item';
   export let item: Item;
 
@@ -12,10 +13,13 @@
     border-2 border-black bg-slate-600/50
     w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
-    bg-center bg-cover cursor-pointer
+    bg-center bg-cover cursor-pointer relative
   "
   style={squareBackgroundStyle}
 >
+  <button on:click={toggleRectangleMode} class="absolute top-0 bottom-0 right-0 left-0">
+    <span class="sr-only">Toggle rectangle mode</span>
+  </button>
   <h3
     class="
       p-1 pt-0 pr-8

@@ -6,3 +6,10 @@ export enum LayoutMode {
 }
 
 export const layoutMode = writable(LayoutMode.square);
+
+export function toggleRectangleMode() {
+  layoutMode.update(() => LayoutMode.rectangle);
+}
+export function toggleSquareMode() {
+  layoutMode.update(() => LayoutMode.square);
+}
