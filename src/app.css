@@ -6,4 +6,15 @@
   .text-shadow {
     text-shadow: black 2px 2px 3px;
   }
+
+  .a-external {
+    @apply underline hover:text-slate-500;
+  }
+  .a-external:after {
+    content: '↗';
+    vertical-align: super;
+    display: inline-block;
+    margin-left: 1px;
+    font-size: 0.75em;
+  }
 }

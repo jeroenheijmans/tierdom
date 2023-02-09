@@ -46,7 +46,7 @@
       🏠
       <!-- svelte-ignore security-anchor-rel-noreferrer -->
       <a 
-        class="underline hover:text-slate-500"
+        class="a-external"
         target="_blank"
         href="https://jeroenheijmans.nl">
         https://jeroenheijmans.nl
@@ -55,7 +55,7 @@
       ✒
       <!-- svelte-ignore security-anchor-rel-noreferrer -->
       <a 
-        class="underline hover:text-slate-500"
+        class="a-external"
         target="_blank"
         href="https://blog.jeroenheijmans.nl">
         https://blog.jeroenheijmans.nl

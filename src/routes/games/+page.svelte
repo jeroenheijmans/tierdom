@@ -8,10 +8,7 @@
 </script>
 
 <InfoBox clazz="my-4">
-  <p>
-    Tiers indicate what games (have) mean(t) to me. Rating is the actual quality of a game (given its context and time period). - Click
-    artwork to toggle mini-reviews.
-  </p>
+  <p>Tiers indicate what games mean to me. Rating is the actual quality of a game (given its context and time period).</p>
 </InfoBox>
 
 <div class="flex flex-col gap-1 bg-black/50 my-2">

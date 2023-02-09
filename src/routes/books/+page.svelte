@@ -9,8 +9,8 @@
 
 <InfoBox clazz="my-4">
   <p>
-    Tiers indicate what books (have) mean(t) to me; how much I'd recommend reading them. Rating is the actual quality of a book (given its
-    context and time period). - Click artwork to toggle mini-reviews.
+    Tiers indicate what books mean to me; how much I'd recommend reading them. Rating is the actual quality of a book (given its context and
+    time period).
   </p>
 </InfoBox>
 
