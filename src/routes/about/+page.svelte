@@ -85,17 +85,15 @@
     <a
         class="a-external"
         target="_blank"
-        href="https://jeroenheijmans.nl">
-        https://jeroenheijmans.nl
-    </a>
+        href="https://jeroenheijmans.nl"
+    >https://jeroenheijmans.nl</a>
     or read my (infrequent) personal blog at
     <!-- svelte-ignore security-anchor-rel-noreferrer -->
     <a
       class="a-external"
       target="_blank"
-      href="https://blog.jeroenheijmans.nl">
-      https://blog.jeroenheijmans.nl
-    </a>.
+      href="https://blog.jeroenheijmans.nl"
+    >https://blog.jeroenheijmans.nl</a>.
   </p>
 
   <h2 class="text-lg font-bold mt-8">Is this Open Source?</h2>
@@ -105,9 +103,8 @@
       class="a-external"
       target="_blank"
       rel="noreferrer"
-      href="https://github.com/jeroenheijmans/tierdom">
-      github.com/jeroenheijmans/tierdom
-    </a>.
+      href="https://github.com/jeroenheijmans/tierdom"
+    >github.com/jeroenheijmans/tierdom</a>.
     But no, it's currently not licensed in any way that allows reuse.
     I just haven't settled yet on which license to use.
     Or thought about how to separate content from code, placing them under different licenses.

@@ -8,13 +8,14 @@
   }
 
   .a-external {
-    @apply underline hover:text-slate-500;
+    @apply underline hover:text-slate-500 relative pr-2;
   }
   .a-external:after {
     content: '↗';
-    vertical-align: super;
     display: inline-block;
-    margin-left: 1px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
     font-size: 0.75em;
   }
 }
