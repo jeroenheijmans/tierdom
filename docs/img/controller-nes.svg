@@ -1,0 +1,16 @@
+<svg width="144" height="62" viewBox="0 0 144 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.5" y="0.5" width="143" height="61" rx="1.5" stroke="black"/>
+<rect x="4.5" y="10.5" width="135" height="47" rx="0.5" stroke="black"/>
+<rect x="51.5" y="41.5" width="11" height="4" rx="2" stroke="black"/>
+<rect x="70.5" y="41.5" width="11" height="4" rx="2" stroke="black"/>
+<rect x="93.5" y="36.5" width="15" height="15" rx="0.5" stroke="black"/>
+<rect x="112.5" y="36.5" width="15" height="15" rx="0.5" stroke="black"/>
+<circle cx="101" cy="44" r="5.5" stroke="black"/>
+<circle cx="120" cy="44" r="5.5" stroke="black"/>
+<rect x="46.5" y="36.5" width="40" height="14" rx="1.5" stroke="black"/>
+<rect x="46.5" y="27.5" width="40" height="6" rx="1.5" stroke="black"/>
+<rect x="46.5" y="18.5" width="40" height="6" rx="1.5" stroke="black"/>
+<path d="M46.5 10.5H86.5V15C86.5 15.8284 85.8284 16.5 85 16.5H48C47.1716 16.5 46.5 15.8284 46.5 15V10.5Z" stroke="black"/>
+<path d="M48 53.5H85C85.8284 53.5 86.5 54.1716 86.5 55V57.5H46.5V55C46.5 54.1716 47.1716 53.5 48 53.5Z" stroke="black"/>
+<path d="M21 25V32.5H13V41.5H21V49.5H30V41.5H38V32.5H30V25H21Z" stroke="black"/>
+</svg>
