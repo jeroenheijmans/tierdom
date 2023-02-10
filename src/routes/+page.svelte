@@ -1,3 +1,7 @@
+<script>
+  import AboutTierLists from '$lib/components/AboutTierLists.svelte';
+</script>
+
 <!-- prettier-ignore -->
 <div class="max-w-4xl">
   <h1 class="text-2xl font-bold mt-8">Tierdom at JeroenHeijmans.nl</h1>
@@ -39,6 +43,9 @@
       <span class="text-center">Recipes<br>(upcoming)</span>
     </span>
   </div>
+
+  <AboutTierLists clazz="mt-4" />
+  
   <h2 class="text-xl font-bold mt-4">Other websites</h2>
   <p class="mt-2">Some other things from me:</p>
   <ul class="mt-2">

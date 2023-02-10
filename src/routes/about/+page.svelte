@@ -1,3 +1,7 @@
+<script>
+  import AboutTierLists from '$lib/components/AboutTierLists.svelte';
+</script>
+
 <!-- prettier-ignore -->
 <div class="max-w-4xl">
   <h1 class="text-2xl font-bold mt-8">What is all this?</h1>
@@ -61,6 +65,8 @@
       </tr>
     </tbody>
   </table>
+
+  <AboutTierLists clazz="mt-8" />
 
   <h2 class="text-lg font-bold mt-8">What's with the name "Tierdom"?</h2>
   <p class="mt-2">
