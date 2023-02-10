@@ -1,11 +1,12 @@
 <script lang="ts">
   import type { Item } from './Item';
   export let item: Item;
+  export let clazz: string = '';
 
   export const gradient = 'linear-gradient(rgba(20, 20, 30, 0.7), rgba(20, 20, 30, 0.7))';
 </script>
 
-<div class="flex w-full border-2 border-black bg-transparent overflow-hidden group relative">
+<div class={`flex w-full border-2 border-black bg-transparent overflow-hidden group relative ${clazz}`}>
   <div class="aspect-square h-24 md:h-32 border-r-2 -mb-2 border-b-2 border-black">
     {#if item.hasArt}
       <img class="w-full" src={item.artUrlSquare} alt={`Box art for ${item.title}`} />

@@ -15,11 +15,8 @@
   {#each data.tierList.tiers as tier}
     <TierContainer {tier}>
       {#each tier.items as item}
-        {#if $layoutMode === LayoutMode.rectangle}
-          <ItemRectangle {item} />
-        {:else}
-          <ItemSquare {item} />
-        {/if}
+        <ItemRectangle {item} clazz={$layoutMode === LayoutMode.rectangle ? 'auto' : 'hidden'} />
+        <ItemSquare {item} clazz={$layoutMode === LayoutMode.square ? 'auto' : 'hidden'} />
       {/each}
     </TierContainer>
   {/each}

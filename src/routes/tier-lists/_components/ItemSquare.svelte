@@ -1,19 +1,21 @@
 <script lang="ts">
   import type { Item } from './Item';
   export let item: Item;
+  export let clazz: string = '';
 
   export const gradient = 'linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6))';
   $: squareBackgroundStyle = item.hasArt ? `background-image: ${gradient}, url('${item.artUrlSquare}');` : `background-image: ${gradient};`;
 </script>
 
 <div
-  class="
+  class={`
     group flex flex-col
     border-2 border-black bg-slate-600/50
     w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
-  "
+    ${clazz}
+  `}
   style={squareBackgroundStyle}
 >
   <h3
