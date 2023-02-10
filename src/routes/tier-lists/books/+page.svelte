@@ -31,7 +31,7 @@
 <!-- prettier-ignore -->
 <div class="max-w-4xl">
   <h2 class="text-xl font-bold mt-4">Where's the rest!?</h2>
-  <p class="mt-4">
+  <p class="mt-2">
     I've read many more books of course, but they're not on this list.
     First off, there's <strong>no fiction</strong> on this tier list.
     I read very little of it, certainly not enough to have an interesting list of them.
