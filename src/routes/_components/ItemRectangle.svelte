@@ -15,20 +15,22 @@
     {/if}
   </div>
   <div class="w-full">
-    <div class="">
-      {#if !!item.iconUrl}
-        <div class="float-right p-1 md:p-2 shrink-0 opacity-75">
-          <img src={item.iconUrl} alt="controller for game system" class="invert max-w-[64px] md:max-w-[140px] max-h-16" />
-        </div>
-      {/if}
-      <h3 class="text-xl font-bold text-slate-100 text-shadow px-2">
-        {item.title}
-      </h3>
-      <h2 class="font-bold text-slate-100 text-shadow px-2">
-        {item.rating}/100, <span class="uppercase">{item.mainProp}</span><slot />
-      </h2>
-      <p class="p-2 pb-4">{item.description}</p>
-    </div>
+    {#if !!item.iconUrl}
+      <div class="float-right p-1 md:p-2 shrink-0 opacity-75">
+        <img
+          src={item.iconUrl}
+          alt="controller for game system"
+          class="invert max-w-[140px] md:max-w-[140px] max-h-[76px] md:max-h-[92px]"
+        />
+      </div>
+    {/if}
+    <h3 class="text-xl font-bold text-slate-100 text-shadow px-2">
+      {item.title}
+    </h3>
+    <h2 class="font-bold text-slate-100 text-shadow px-2">
+      {item.rating}/100, <span class="uppercase">{item.mainProp}</span><slot />
+    </h2>
+    <p class="p-2 pb-4">{item.description}</p>
   </div>
   <div class="h-[2px] w-full absolute bottom-0 bg-slate-400 opacity-70 transition-all group-hover:h-[8px] group-hover:opacity-80">
     <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`} />
