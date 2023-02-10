@@ -1,6 +1,6 @@
 <script lang="ts">
   import InfoBox from '$lib/components/InfoBox.svelte';
-  import { LayoutMode, layoutMode } from '../../lib/stores';
+  import { LayoutMode, layoutMode } from '$lib/stores';
   import ItemRectangle from '../_components/ItemRectangle.svelte';
   import ItemSquare from '../_components/ItemSquare.svelte';
   import TierContainer from '../_components/TierContainer.svelte';

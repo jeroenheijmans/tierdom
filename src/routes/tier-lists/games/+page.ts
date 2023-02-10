@@ -1,4 +1,4 @@
-import { games } from '../../data/games';
+import { games } from '$lib/data/games';
 import { TierList } from '../_components/TierList';
 import { Game } from './Game';
 

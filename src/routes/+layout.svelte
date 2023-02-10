@@ -9,9 +9,9 @@
     <nav class="flex flex-wrap gap-1 md:gap-4 pt-4">
       <NavItem href="/">Home</NavItem>
       <span class="hidden md:inline-block py-2">-</span>
-      <NavItem href="/games">Games</NavItem>
-      <NavItem href="/books">Books</NavItem>
-      <NavItem href="/movies">Movies</NavItem>
+      <NavItem href="/tier-lists/games">Games</NavItem>
+      <NavItem href="/tier-lists/books">Books</NavItem>
+      <NavItem href="/tier-lists/movies">Movies</NavItem>
       <span class="hidden md:inline-block py-2">-</span>
       <NavItem href="/about">About</NavItem>
       <div class="ml-auto flex flex-nowrap">

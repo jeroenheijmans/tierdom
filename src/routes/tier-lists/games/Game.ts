@@ -1,4 +1,4 @@
-import { ratingToHsl } from '../../lib/components/util';
+import { ratingToHsl } from '$lib/components/util';
 import type { Item } from '../_components/Item';
 
 export class Game implements Item {
@@ -27,7 +27,7 @@ export class Game implements Item {
 
     this.mainProp = this.props['platform'];
     this.ratingColor = ratingToHsl(this.rating);
-    this.artUrlSquare = `art/games/${this.code}.png`;
-    this.iconUrl = `img/controller-${this.mainProp}.svg`;
+    this.artUrlSquare = `/art/games/${this.code}.png`;
+    this.iconUrl = `/img/controller-${this.mainProp}.svg`;
   }
 }

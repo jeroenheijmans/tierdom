@@ -1,4 +1,4 @@
-import { ratingToHsl } from '../../lib/components/util';
+import { ratingToHsl } from '$lib/components/util';
 import type { Item } from '../_components/Item';
 
 // Separating parts of an ISBN is hard because
@@ -51,7 +51,7 @@ export class Book implements Item {
     this.isbn = naiveIsbnFormatter(this.props['isbn']);
     this.mainProp = this.props['year'];
     this.ratingColor = ratingToHsl(this.rating);
-    this.artUrlSquare = `art/books/${this.code}.png`;
+    this.artUrlSquare = `/art/books/${this.code}.png`;
     this.iconUrl = null; // TODO
   }
 }

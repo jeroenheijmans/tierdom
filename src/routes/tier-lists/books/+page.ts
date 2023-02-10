@@ -1,4 +1,4 @@
-import { books } from '../../data/books';
+import { books } from '$lib/data/books';
 import { TierList } from '../_components/TierList';
 import { Book } from './Book';
 

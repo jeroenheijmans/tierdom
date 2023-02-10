@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { toggleSquareMode } from '$lib/stores';
   import type { Item } from './Item';
   export let item: Item;
 
