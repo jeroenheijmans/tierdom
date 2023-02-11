@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- prettier-ignore -->
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Tiered lists where I rank the games, books, and other things I've enjoyed. For bookkeeping and sharing purposes: enjoy!">
+    <meta name="author" content="Jeroen Heijmans">
+    <meta name="Copyright" content="Copyright Jeroen Heijmans 2023. All Rights Reserved.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jeroenheijmans">
+    <meta name="twitter:title" content="Tierdom JeroenHeijmans.nl">
+    <meta name="twitter:description" content="Tiered lists where I rank the games, books, and other things I've enjoyed. For bookkeeping and sharing purposes: enjoy!">
+    <meta name="twitter:image" content="https://tierdom.jeroenheijmans.nl/img/og-image.png">
+    <meta name="twitter:image:alt" content="Visual representation of Tiers 'S/A/B/C/D/E/F and their colors.">
+    <meta property="og:title" content="Tierdom JeroenHeijmans.nl">
+    <meta property="og:description" content="Tiered lists where I rank the games, books, and other things I've enjoyed. For bookkeeping and sharing purposes: enjoy!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tierdom.jeroenheijmans.nl/img/og-image.png">
+    <meta property="og:image:alt" content="Visual representation of Tiers 'S/A/B/C/D/E/F and their colors.">
+    <meta property="og:url" content="https://tierdom.jeroenheijmans.nl">
     <title>Tierdom JeroenHeijmans.nl</title>
     <meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-41b7ea28.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-b820800c.js">
+		<link href="../_app/immutable/assets/_layout-aa3ab38e.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-a8d7a779.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-1e48f5d8.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-f058118c.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-a869863a.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9491803a.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-8a63d479.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/A-e5ab3179.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/stores-77802b14.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/stores-bc6c6c8f.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/tier-lists/books/_page.svelte-ba8be573.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/TierContainer-5abe286f.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/tier-lists/books/_page.svelte-efaf89ba.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/TierContainer-10ddf646.js">
 		<link rel="modulepreload" href="../_app/immutable/modules/pages/tier-lists/books/_page.ts-caa0b42c.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e3465aa3.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/util-aa14e3c2.js">
@@ -24,13 +41,13 @@
     <div style="display: contents">
 
 
-<div class="min-h-screen flex flex-col bg-gradient-to-b from-slate-800 to-slate-900 text-slate-100"><div class="px-2 md:px-4 mb-8"><div class="max-w-page mx-auto pb-4"><nav class="flex flex-wrap gap-1 md:gap-4 pt-4"><a href="/" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Home</a>
-        <span class="hidden md:inline-block py-2">-</span>
-        <a href="/tier-lists/games" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Games</a>
-        <a href="/tier-lists/books" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/30">Books</a>
-        <a href="/tier-lists/movies" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Movies</a>
-        <span class="hidden md:inline-block py-2">-</span>
-        <a href="/about" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">About</a>
+<div class="min-h-screen flex flex-col bg-gradient-to-b from-slate-800 to-slate-900 text-slate-100"><div class="px-2 md:px-4 mb-8"><div class="max-w-page mx-auto pb-4"><nav class="flex gap-1 md:gap-4 pt-4"><div class="flex flex-wrap gap-1 md:gap-4"><a href="/" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Home</a>
+          <span class="hidden md:inline-block py-2">-</span>
+          <a href="/tier-lists/games" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Games</a>
+          <a href="/tier-lists/books" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/30">Books</a>
+          <a href="/tier-lists/movies" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Movies</a>
+          <span class="hidden md:inline-block py-2">-</span>
+          <a href="/about" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">About</a></div>
         <div class="ml-auto flex flex-nowrap"><button aria-label="Toggle square tier list items" class="p-1 md:p-2 flex gap-2 hover:opacity-90
               opacity-75" title="toggle compact mode with little squares"><img src="/img/layout-mode-grid.svg" alt="3 by 3 little squares">
             <span class="hidden lg:inline-block">Grid with icons</span></button>
@@ -52,74 +69,74 @@
   <div class="flex flex-wrap gap-0 p-0 w-full"><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/made-to-stick.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Made to Stick</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">100/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/made-to-stick.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Made to Stick</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">100/100</div>
     <span class="ml-auto mr-2">2006</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 100%; background-color: hsl(130, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 100%; background-color: hsl(130, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/influence-the-psychology-of-persuasion.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Influence: The Psychology of Persuasion</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">100/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/influence-the-psychology-of-persuasion.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Influence: The Psychology of Persuasion</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">100/100</div>
     <span class="ml-auto mr-2">1984</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 100%; background-color: hsl(130, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 100%; background-color: hsl(130, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/pragmatic-programmer.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Pragmatic Programmer</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">99/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/pragmatic-programmer.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Pragmatic Programmer</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">99/100</div>
     <span class="ml-auto mr-2">1999</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 99%; background-color: hsl(128.4, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 99%; background-color: hsl(128.4, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/culture-map.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Culture Map</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">98/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/culture-map.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Culture Map</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">98/100</div>
     <span class="ml-auto mr-2">2014</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 98%; background-color: hsl(126.80000000000001, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 98%; background-color: hsl(126.80000000000001, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/mythical-man-month.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Mythical Man-Month</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">97/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/mythical-man-month.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Mythical Man-Month</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">97/100</div>
     <span class="ml-auto mr-2">1975</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 97%; background-color: hsl(125.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 97%; background-color: hsl(125.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/domain-driven-design.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Domain-Driven Design</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/domain-driven-design.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Domain-Driven Design</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
     <span class="ml-auto mr-2">2003</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/non-designers-design-book.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Non-Designer's Design Book, 3rd Edition</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">90/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/non-designers-design-book.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Non-Designer's Design Book, 3rd Edition</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">90/100</div>
     <span class="ml-auto mr-2">2008</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 90%; background-color: hsl(114, 60%, 40%, 1.0)"></div></div></div>
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 90%; background-color: hsl(114, 60%, 40%, 1.0)"></div></div></div>
     </div></div><div class="
     flex min-h-[4rem]
     bg-neutral-800/50 border-4 border-A-tier
@@ -131,104 +148,104 @@
   <div class="flex flex-wrap gap-0 p-0 w-full"><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/prince-machiavelli.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Prince (Machiavelli)</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/prince-machiavelli.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Prince (Machiavelli)</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
     <span class="ml-auto mr-2">1513</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/death-march.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Death March</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/death-march.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Death March</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
     <span class="ml-auto mr-2">2003</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/working-effectively-with-legacy-code.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Working Effectively With Legacy Code</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">92/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/working-effectively-with-legacy-code.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Working Effectively With Legacy Code</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">92/100</div>
     <span class="ml-auto mr-2">2004</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 92%; background-color: hsl(117.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 92%; background-color: hsl(117.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/design-patterns.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Design Patterns</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">90/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/design-patterns.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Design Patterns</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">90/100</div>
     <span class="ml-auto mr-2">1994</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 90%; background-color: hsl(114, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 90%; background-color: hsl(114, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/so-you-want-to-talk-about-race.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">So You Want to Talk About Race?</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/so-you-want-to-talk-about-race.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">So You Want to Talk About Race?</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
     <span class="ml-auto mr-2">2018</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/this-is-lean.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">This Is Lean</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/this-is-lean.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">This Is Lean</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
     <span class="ml-auto mr-2">2011</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/infinite-game.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Infinite Game</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">94/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/infinite-game.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Infinite Game</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">94/100</div>
     <span class="ml-auto mr-2">2019</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 94%; background-color: hsl(120.4, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 94%; background-color: hsl(120.4, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/dont-make-me-think.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Don't Make Me Think</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">89/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/dont-make-me-think.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Don't Make Me Think</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">89/100</div>
     <span class="ml-auto mr-2">2000</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 89%; background-color: hsl(112.4, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 89%; background-color: hsl(112.4, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/agile-estimating-and-planning.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Agile Estimating and Planning</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">88/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/agile-estimating-and-planning.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Agile Estimating and Planning</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">88/100</div>
     <span class="ml-auto mr-2">2005</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 88%; background-color: hsl(110.80000000000001, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 88%; background-color: hsl(110.80000000000001, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/dependency-injection-in-dotnet-2nd-edition.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Dependency Injection in .NET, 2nd Edition</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">86/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/dependency-injection-in-dotnet-2nd-edition.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Dependency Injection in .NET, 2nd Edition</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">86/100</div>
     <span class="ml-auto mr-2">2019</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 86%; background-color: hsl(107.6, 60%, 40%, 1.0)"></div></div></div>
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 86%; background-color: hsl(107.6, 60%, 40%, 1.0)"></div></div></div>
     </div></div><div class="
     flex min-h-[4rem]
     bg-neutral-800/50 border-4 border-B-tier
@@ -240,74 +257,74 @@
   <div class="flex flex-wrap gap-0 p-0 w-full"><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/programmers-brain.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Programmer's Brain</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">86/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/programmers-brain.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Programmer's Brain</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">86/100</div>
     <span class="ml-auto mr-2">2021</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 86%; background-color: hsl(107.6, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 86%; background-color: hsl(107.6, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/sprint.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Sprint</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">90/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/sprint.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Sprint</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">90/100</div>
     <span class="ml-auto mr-2">2016</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 90%; background-color: hsl(114, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 90%; background-color: hsl(114, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/ted-talks.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">TED Talks</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">92/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/ted-talks.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">TED Talks</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">92/100</div>
     <span class="ml-auto mr-2">2016</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 92%; background-color: hsl(117.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 92%; background-color: hsl(117.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/test-driven-development-by-example.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Test-Driven Development: By Example</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/test-driven-development-by-example.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Test-Driven Development: By Example</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
     <span class="ml-auto mr-2">2002</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/art-of-war.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Art of War</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/art-of-war.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Art of War</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
     <span class="ml-auto mr-2">2011</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/clean-coder.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Clean Coder</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">87/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/clean-coder.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Clean Coder</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">87/100</div>
     <span class="ml-auto mr-2">2011</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 87%; background-color: hsl(109.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 87%; background-color: hsl(109.19999999999999, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/clean-code.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Clean Code</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">85/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/clean-code.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Clean Code</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">85/100</div>
     <span class="ml-auto mr-2">2008</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 85%; background-color: hsl(106, 60%, 40%, 1.0)"></div></div></div>
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 85%; background-color: hsl(106, 60%, 40%, 1.0)"></div></div></div>
     </div></div><div class="
     flex min-h-[4rem]
     bg-neutral-800/50 border-4 border-C-tier
@@ -319,134 +336,134 @@
   <div class="flex flex-wrap gap-0 p-0 w-full"><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/smart-and-gets-things-done.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Smart and Gets Things Done</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/smart-and-gets-things-done.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Smart and Gets Things Done</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
     <span class="ml-auto mr-2">2007</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/agile-retrospectives.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Agile Retrospectives</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">50/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/agile-retrospectives.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Agile Retrospectives</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">50/100</div>
     <span class="ml-auto mr-2">2006</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 50%; background-color: hsl(50, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 50%; background-color: hsl(50, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/design-of-everyday-things.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Design of Everyday Things</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/design-of-everyday-things.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Design of Everyday Things</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
     <span class="ml-auto mr-2">1988</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/six-thinking-hats.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Six Thinking Hats</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/six-thinking-hats.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Six Thinking Hats</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
     <span class="ml-auto mr-2">1981</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/mom-test.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Mom Test</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">73/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/mom-test.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Mom Test</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">73/100</div>
     <span class="ml-auto mr-2">2013</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 73%; background-color: hsl(86.8, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 73%; background-color: hsl(86.8, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/it-girl.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">De IT girl</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/it-girl.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">De IT girl</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
     <span class="ml-auto mr-2">2021</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/freakonomics.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Freakonomics</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">72/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/freakonomics.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Freakonomics</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">72/100</div>
     <span class="ml-auto mr-2">2006</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 72%; background-color: hsl(85.2, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 72%; background-color: hsl(85.2, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/inspired.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Inspired</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/inspired.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Inspired</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
     <span class="ml-auto mr-2">2008</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/100-things-every-designer-needs-to-know-about-people.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">100 Things</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">68/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/100-things-every-designer-needs-to-know-about-people.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">100 Things</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">68/100</div>
     <span class="ml-auto mr-2">2011</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 68%; background-color: hsl(78.8, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 68%; background-color: hsl(78.8, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/beyond-the-prototype.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Beyond the Prototype</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">67/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/beyond-the-prototype.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Beyond the Prototype</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">67/100</div>
     <span class="ml-auto mr-2">2019</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 67%; background-color: hsl(77.2, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 67%; background-color: hsl(77.2, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/escaping-the-build-trap.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Escaping the Build Trap</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">65/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/escaping-the-build-trap.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Escaping the Build Trap</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">65/100</div>
     <span class="ml-auto mr-2">2018</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 65%; background-color: hsl(74, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 65%; background-color: hsl(74, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/demon-haunted-world.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Demon-Haunted World</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">60/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/demon-haunted-world.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">The Demon-Haunted World</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">60/100</div>
     <span class="ml-auto mr-2">1996</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 60%; background-color: hsl(66, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 60%; background-color: hsl(66, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/kracht-van-scrum.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">De kracht van Scrum</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/kracht-van-scrum.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">De kracht van Scrum</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
     <span class="ml-auto mr-2">2010</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div>
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div>
     </div></div><div class="
     flex min-h-[4rem]
     bg-neutral-800/50 border-4 border-D-tier
@@ -458,44 +475,44 @@
   <div class="flex flex-wrap gap-0 p-0 w-full"><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/csharp-in-depth.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">C# in Depth, Fourth Edition</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">88/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/csharp-in-depth.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">C# in Depth, Fourth Edition</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">88/100</div>
     <span class="ml-auto mr-2">2019</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 88%; background-color: hsl(110.80000000000001, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 88%; background-color: hsl(110.80000000000001, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/building-microservices.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Building Microservices</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/building-microservices.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Building Microservices</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">75/100</div>
     <span class="ml-auto mr-2">2014</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 75%; background-color: hsl(90, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/never-split-the-difference.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Never Split the Difference</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/never-split-the-difference.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Never Split the Difference</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">70/100</div>
     <span class="ml-auto mr-2">2017</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 70%; background-color: hsl(82, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/agile-software-development-principles-patterns-and-practices.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Agile Software Development</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">38/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/agile-software-development-principles-patterns-and-practices.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Agile Software Development</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">38/100</div>
     <span class="ml-auto mr-2">2002</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 38%; background-color: hsl(30.799999999999997, 60%, 40%, 1.0)"></div></div></div>
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 38%; background-color: hsl(30.799999999999997, 60%, 40%, 1.0)"></div></div></div>
     </div></div><div class="
     flex min-h-[4rem]
     bg-neutral-800/50 border-4 border-E-tier
@@ -507,24 +524,24 @@
   <div class="flex flex-wrap gap-0 p-0 w-full"><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/writing-effective-use-cases.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Writing Effective Use Cases</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">28/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/writing-effective-use-cases.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Writing Effective Use Cases</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">28/100</div>
     <span class="ml-auto mr-2">2000</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 28%; background-color: hsl(14.799999999999997, 60%, 40%, 1.0)"></div></div></div><div class="
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 28%; background-color: hsl(14.799999999999997, 60%, 40%, 1.0)"></div></div></div><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/javascript-the-good-parts.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">JavaScript: The Good Parts</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/javascript-the-good-parts.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">JavaScript: The Good Parts</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">95/100</div>
     <span class="ml-auto mr-2">2008</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div>
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 95%; background-color: hsl(122, 60%, 40%, 1.0)"></div></div></div>
     </div></div><div class="
     flex min-h-[4rem]
     bg-neutral-800/50 border-4 border-F-tier
@@ -536,14 +553,14 @@
   <div class="flex flex-wrap gap-0 p-0 w-full"><div class="
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     
-  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/code-complete-2.png');"><h3 class="p-1 pt-0 pr-8 transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Code Complete 2</h3>
-  <div class="flex items-end mt-auto transition-all group-hover:opacity-100 group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">10/100</div>
+  " style="background-image: linear-gradient(rgba(20, 20, 30, 0.6), rgba(20, 20, 30, 0.6)), url('/art/books/code-complete-2.png');"><h3 class="p-1 pt-0 pr-8 transition-all md:group-hover:pr-0 md:group-hover:text-2xl md:text-xl font-bold text-slate-100 text-shadow ">Code Complete 2</h3>
+  <div class="flex items-end mt-auto transition-all md:group-hover:opacity-100 md:group-hover:text-xl font-bold text-slate-200 opacity-60 uppercase "><div class="mx-1">10/100</div>
     <span class="ml-auto mr-2">1993</span></div>
-  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all group-hover:h-[16px] group-hover:opacity-80 "><div class="h-full" style="width: 10%; background-color: hsl(-14, 60%, 40%, 1.0)"></div></div></div>
+  <div class="relative m-1 h-[4px] bg-slate-400 opacity-70 transition-all md:group-hover:h-[16px] md:group-hover:opacity-80 "><div class="h-full" style="width: 10%; background-color: hsl(-14, 60%, 40%, 1.0)"></div></div></div>
     </div></div></div>
 
 
@@ -565,22 +582,25 @@
   <footer class="mt-auto border-t border-t-slate-700 bg-black/10 py-2"><div class="px-2 md:px-4 opacity-50 text-sm"><div class="max-w-page mx-auto flex gap-4"><span>© 2023, Jeroen Heijmans</span>
         <span class="hidden md:inline-block">|</span>
         
-        <a class="a-external" target="_blank" href="https://jeroenheijmans.nl">WWW</a>
+        
+<a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://jeroenheijmans.nl"><span class="underline">WWW</span><sup class="text-xs no-underline">↗</sup></a>
         <span class="hidden md:inline-block">|</span>
         
-        <a class="a-external" target="_blank" href="https://blog.jeroenheijmans.nl">Blog</a>
+        
+<a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://blog.jeroenheijmans.nl"><span class="underline">Blog</span><sup class="text-xs no-underline">↗</sup></a>
         <span class="hidden md:inline-block">|</span>
-        <a class="a-external" target="_blank" rel="noreferrer" href="https://github.com/jeroenheijmans/tierdom">Tierdom Source</a></div></div></footer></div>
+        
+<a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://github.com/jeroenheijmans/tierdom"><span class="underline">Tierdom Source</span><sup class="text-xs no-underline">↗</sup></a></div></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="p94qui">
-			import { start } from "../_app/immutable/start-b820800c.js";
+		<script type="module" data-sveltekit-hydrate="aandg7">
+			import { start } from "../_app/immutable/start-a8d7a779.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="p94qui"]').parentNode,
-				version: "1676067364099",
+				target: document.querySelector('[data-sveltekit-hydrate="aandg7"]').parentNode,
+				version: "1676127041787",
 				hydrate: {
 					node_ids: [0, 4],
 					data: [{type:"data",data:null,uses:{}},null],

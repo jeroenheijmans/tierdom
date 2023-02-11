@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- prettier-ignore -->
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="../favicon.png" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Tiered lists where I rank the games, books, and other things I've enjoyed. For bookkeeping and sharing purposes: enjoy!">
+    <meta name="author" content="Jeroen Heijmans">
+    <meta name="Copyright" content="Copyright Jeroen Heijmans 2023. All Rights Reserved.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@jeroenheijmans">
+    <meta name="twitter:title" content="Tierdom JeroenHeijmans.nl">
+    <meta name="twitter:description" content="Tiered lists where I rank the games, books, and other things I've enjoyed. For bookkeeping and sharing purposes: enjoy!">
+    <meta name="twitter:image" content="https://tierdom.jeroenheijmans.nl/img/og-image.png">
+    <meta name="twitter:image:alt" content="Visual representation of Tiers 'S/A/B/C/D/E/F and their colors.">
+    <meta property="og:title" content="Tierdom JeroenHeijmans.nl">
+    <meta property="og:description" content="Tiered lists where I rank the games, books, and other things I've enjoyed. For bookkeeping and sharing purposes: enjoy!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://tierdom.jeroenheijmans.nl/img/og-image.png">
+    <meta property="og:image:alt" content="Visual representation of Tiers 'S/A/B/C/D/E/F and their colors.">
+    <meta property="og:url" content="https://tierdom.jeroenheijmans.nl">
     <title>Tierdom JeroenHeijmans.nl</title>
     <meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-41b7ea28.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-b820800c.js">
+		<link href="../_app/immutable/assets/_layout-aa3ab38e.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/start-a8d7a779.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-1e48f5d8.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-f058118c.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-a869863a.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-9491803a.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-8a63d479.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/A-e5ab3179.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/stores-77802b14.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/stores-bc6c6c8f.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/tier-lists/movies/_page.svelte-637bf488.js">
+		<link rel="modulepreload" href="../_app/immutable/components/pages/tier-lists/movies/_page.svelte-b7b63b59.js">
   </head>
   <body data-sveltekit-preload-data="hover">
     <div style="display: contents">
 
 
-<div class="min-h-screen flex flex-col bg-gradient-to-b from-slate-800 to-slate-900 text-slate-100"><div class="px-2 md:px-4 mb-8"><div class="max-w-page mx-auto pb-4"><nav class="flex flex-wrap gap-1 md:gap-4 pt-4"><a href="/" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Home</a>
-        <span class="hidden md:inline-block py-2">-</span>
-        <a href="/tier-lists/games" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Games</a>
-        <a href="/tier-lists/books" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Books</a>
-        <a href="/tier-lists/movies" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/30">Movies</a>
-        <span class="hidden md:inline-block py-2">-</span>
-        <a href="/about" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">About</a>
+<div class="min-h-screen flex flex-col bg-gradient-to-b from-slate-800 to-slate-900 text-slate-100"><div class="px-2 md:px-4 mb-8"><div class="max-w-page mx-auto pb-4"><nav class="flex gap-1 md:gap-4 pt-4"><div class="flex flex-wrap gap-1 md:gap-4"><a href="/" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Home</a>
+          <span class="hidden md:inline-block py-2">-</span>
+          <a href="/tier-lists/games" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Games</a>
+          <a href="/tier-lists/books" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">Books</a>
+          <a href="/tier-lists/movies" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/30">Movies</a>
+          <span class="hidden md:inline-block py-2">-</span>
+          <a href="/about" class="hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 bg-slate-100/10">About</a></div>
         <div class="ml-auto flex flex-nowrap"><button aria-label="Toggle square tier list items" class="p-1 md:p-2 flex gap-2 hover:opacity-90
               opacity-75" title="toggle compact mode with little squares"><img src="/img/layout-mode-grid.svg" alt="3 by 3 little squares">
             <span class="hidden lg:inline-block">Grid with icons</span></button>
@@ -34,27 +51,32 @@
               opacity-25" title="toggle extended mode with full reviews"><img src="/img/layout-mode-list.svg" alt="3 horizontal bars">
             <span class="hidden lg:inline-block">Full descriptions</span></button></div></nav>
       <h1 class="text-2xl font-bold mt-8">Movies Tier List</h1>
-<p>This tier list is not implemented yet! Please check <a href="https://www.imdb.com/user/ur54522962/ratings?sort=your_rating,desc" target="_blank" class="a-external" rel="noreferrer">my IMDB ratings for the moment</a>.
+<p>This tier list is not implemented yet! Please check
+  
+<a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://www.imdb.com/user/ur54522962/ratings?sort=your_rating,desc"><span class="underline">my IMDB ratings for the moment</span><sup class="text-xs no-underline">↗</sup></a>.
 </p></div></div>
   <footer class="mt-auto border-t border-t-slate-700 bg-black/10 py-2"><div class="px-2 md:px-4 opacity-50 text-sm"><div class="max-w-page mx-auto flex gap-4"><span>© 2023, Jeroen Heijmans</span>
         <span class="hidden md:inline-block">|</span>
         
-        <a class="a-external" target="_blank" href="https://jeroenheijmans.nl">WWW</a>
+        
+<a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://jeroenheijmans.nl"><span class="underline">WWW</span><sup class="text-xs no-underline">↗</sup></a>
         <span class="hidden md:inline-block">|</span>
         
-        <a class="a-external" target="_blank" href="https://blog.jeroenheijmans.nl">Blog</a>
+        
+<a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://blog.jeroenheijmans.nl"><span class="underline">Blog</span><sup class="text-xs no-underline">↗</sup></a>
         <span class="hidden md:inline-block">|</span>
-        <a class="a-external" target="_blank" rel="noreferrer" href="https://github.com/jeroenheijmans/tierdom">Tierdom Source</a></div></div></footer></div>
+        
+<a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://github.com/jeroenheijmans/tierdom"><span class="underline">Tierdom Source</span><sup class="text-xs no-underline">↗</sup></a></div></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="x0joxk">
-			import { start } from "../_app/immutable/start-b820800c.js";
+		<script type="module" data-sveltekit-hydrate="1vymzqn">
+			import { start } from "../_app/immutable/start-a8d7a779.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="x0joxk"]').parentNode,
-				version: "1676067364099",
+				target: document.querySelector('[data-sveltekit-hydrate="1vymzqn"]').parentNode,
+				version: "1676127041787",
 				hydrate: {
 					node_ids: [0, 6],
 					data: [{type:"data",data:null,uses:{}},null],
