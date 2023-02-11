@@ -11,7 +11,7 @@
   class={`
     group flex flex-col
     border-2 border-black bg-slate-600/50
-    w-[50%] md:w-[33.3333333%] lg:w-[25%] xl:w-[16.6666667%] 2xl:w-[12.5%]
+    w-[50%] md:w-[25%] lg:w-[20%] xl:w-[16.6666667%] 2xl:w-[12.5%]
     aspect-square
     bg-center bg-cover cursor-pointer relative
     ${clazz}
@@ -21,7 +21,7 @@
   <h3
     class="
       p-1 pt-0 pr-8
-      transition-all group-hover:pr-0 group-hover:text-xl md:group-hover:text-2xl
+      transition-all md:group-hover:pr-0 md:group-hover:text-2xl
       md:text-xl font-bold text-slate-100 text-shadow
     "
   >
@@ -30,7 +30,7 @@
   <div
     class="
       flex items-end mt-auto
-      transition-all group-hover:opacity-100 group-hover:text-xl
+      transition-all md:group-hover:opacity-100 md:group-hover:text-xl
       font-bold text-slate-200 opacity-60 uppercase
     "
   >
@@ -40,7 +40,7 @@
   <div
     class="
       relative m-1 h-[4px] bg-slate-400 opacity-70
-      transition-all group-hover:h-[16px] group-hover:opacity-80
+      transition-all md:group-hover:h-[16px] md:group-hover:opacity-80
     "
   >
     <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`} />
