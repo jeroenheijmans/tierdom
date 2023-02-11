@@ -1,7 +1,9 @@
 <script>
+  import A from '$lib/components/A.svelte';
+  import AboutTierLists from '$lib/components/AboutTierLists.svelte';
+  import NavItem from '$lib/components/NavItem.svelte';
+  import { LayoutMode, layoutMode, toggleRectangleMode, toggleSquareMode } from '$lib/stores';
   import '../app.css';
-  import NavItem from '../lib/components/NavItem.svelte';
-  import { LayoutMode, layoutMode, toggleRectangleMode, toggleSquareMode } from '../lib/stores';
 </script>
 
 <div class="min-h-screen flex flex-col bg-gradient-to-b from-slate-800 to-slate-900 text-slate-100">
@@ -49,12 +51,12 @@
         <span>© 2023, Jeroen Heijmans</span>
         <span class="hidden md:inline-block">|</span>
         <!-- svelte-ignore security-anchor-rel-noreferrer -->
-        <a class="a-external" target="_blank" href="https://jeroenheijmans.nl">WWW</a>
+        <A href="https://jeroenheijmans.nl">WWW</A>
         <span class="hidden md:inline-block">|</span>
         <!-- svelte-ignore security-anchor-rel-noreferrer -->
-        <a class="a-external" target="_blank" href="https://blog.jeroenheijmans.nl">Blog</a>
+        <A href="https://blog.jeroenheijmans.nl">Blog</A>
         <span class="hidden md:inline-block">|</span>
-        <a class="a-external" target="_blank" rel="noreferrer" href="https://github.com/jeroenheijmans/tierdom">Tierdom Source</a>
+        <A href="https://github.com/jeroenheijmans/tierdom">Tierdom Source</A>
       </div>
     </div>
   </footer>

@@ -6,16 +6,4 @@
   .text-shadow {
     text-shadow: black 2px 2px 3px;
   }
-
-  .a-external {
-    @apply underline hover:text-slate-500 relative pr-2;
-  }
-  .a-external:after {
-    content: '↗';
-    display: inline-block;
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    font-size: 0.75em;
-  }
 }

@@ -1,4 +1,5 @@
 <script>
+  import A from '$lib/components/A.svelte';
   import AboutTierLists from '$lib/components/AboutTierLists.svelte';
 </script>
 
@@ -51,21 +52,11 @@
   <ul class="mt-2">
     <li class="list-disc ml-8">
       🏠
-      <!-- svelte-ignore security-anchor-rel-noreferrer -->
-      <a 
-        class="a-external"
-        target="_blank"
-        href="https://jeroenheijmans.nl">
-        https://jeroenheijmans.nl
-    </a></li>
+      <A href="https://jeroenheijmans.nl">https://jeroenheijmans.nl</A>
+    </li>
     <li class="list-disc ml-8">
       ✒
-      <!-- svelte-ignore security-anchor-rel-noreferrer -->
-      <a 
-        class="a-external"
-        target="_blank"
-        href="https://blog.jeroenheijmans.nl">
-        https://blog.jeroenheijmans.nl
-      </a></li>
+      <A href="https://blog.jeroenheijmans.nl">https://blog.jeroenheijmans.nl</A>
+    </li>
   </ul>
 </div>

@@ -1,4 +1,5 @@
 <script>
+  import A from '$lib/components/A.svelte';
   import AboutTierLists from '$lib/components/AboutTierLists.svelte';
 </script>
 
@@ -71,9 +72,9 @@
   <h2 class="text-lg font-bold mt-8">What's with the name "Tierdom"?</h2>
   <p class="mt-2">
     Well... it's my own little
-    <a class="a-external" href="https://www.merriam-webster.com/dictionary/fiefdom" target="_blank" rel="noreferrer">Fiefdom</a>
+    <A href="https://www.merriam-webster.com/dictionary/fiefdom">Fiefdom</A>
     of
-    <a class="a-external" href="https://en.wikipedia.org/wiki/Tier_list" target="_blank" rel="noreferrer">Tier</a>
+    <A href="https://en.wikipedia.org/wiki/Tier_list">Tier</A>
     lists.
     Plus, it wasn't "taken" yet (for anything remotely related) so with this initial work I guess I'm "claiming" the term?
   </p>
@@ -81,30 +82,15 @@
   <h2 class="text-lg font-bold mt-8">Who are you?</h2>
   <p class="mt-2">
     My name is Jeroen Heijmans. Find all my contact information and other side projects at
-    <!-- svelte-ignore security-anchor-rel-noreferrer -->
-    <a
-        class="a-external"
-        target="_blank"
-        href="https://jeroenheijmans.nl"
-    >https://jeroenheijmans.nl</a>
+    <A href="https://jeroenheijmans.nl">https://jeroenheijmans.nl</A>
     or read my (infrequent) personal blog at
-    <!-- svelte-ignore security-anchor-rel-noreferrer -->
-    <a
-      class="a-external"
-      target="_blank"
-      href="https://blog.jeroenheijmans.nl"
-    >https://blog.jeroenheijmans.nl</a>.
+    <A href="https://blog.jeroenheijmans.nl">https://blog.jeroenheijmans.nl</A>
   </p>
 
   <h2 class="text-lg font-bold mt-8">Is this Open Source?</h2>
   <p class="mt-2">
     Yes and no. Yes, it <em>is</em> "open" at
-    <a
-      class="a-external"
-      target="_blank"
-      rel="noreferrer"
-      href="https://github.com/jeroenheijmans/tierdom"
-    >github.com/jeroenheijmans/tierdom</a>.
+    <A href="https://github.com/jeroenheijmans/tierdom">github.com/jeroenheijmans/tierdom</A>.
     But no, it's currently not licensed in any way that allows reuse.
     I just haven't settled yet on which license to use.
     Or thought about how to separate content from code, placing them under different licenses.
