@@ -16,31 +16,31 @@
       <strong class="shrink-0">
         <span class="w-8 text-black/90 text-center inline-block bg-S-tier">S</span>
       </strong>
-      <span><strong>Tier:</strong> 🤩 Perfection!! A category on its own, the absolute top of the line.</span>
+      <span><strong>Tier:</strong> 🤩 Perfection!! Best of the best!</span>
     </li>
     <li class="ml-4 mb-2 flex gap-2">
       <strong class="shrink-0">
         <span class="w-8 text-black/90 text-center inline-block bg-A-tier">A</span>
       </strong>
-      <span><strong>Tier:</strong> 😁 Fantastic! An absolute top grade for these items.</span>
+      <span><strong>Tier:</strong> 😁 Fantastic! Top grade.</span>
     </li>
     <li class="ml-4 mb-2 flex gap-2">
       <strong class="shrink-0">
         <span class="w-8 text-black/90 text-center inline-block bg-B-tier">B</span>
       </strong>
-      <span><strong>Tier:</strong> 😊 Great. Above average stuff in this tier.</span>
+      <span><strong>Tier:</strong> 😊 Great. Above average stuff.</span>
     </li>
     <li class="ml-4 mb-2 flex gap-2">
       <strong class="shrink-0">
         <span class="w-8 text-black/90 text-center inline-block bg-C-tier">C</span>
       </strong>
-      <span><strong>Tier:</strong> 🙂 Decent. A passing grade still, for sure.</span>
+      <span><strong>Tier:</strong> 🙂 Decent. A passing grade.</span>
     </li>
     <li class="ml-4 mb-2 flex gap-2">
       <strong class="shrink-0">
         <span class="w-8 text-black/90 text-center inline-block bg-D-tier">D</span>
       </strong>
-      <span><strong>Tier:</strong> 😑 Bad. Not quite a passing grade for these items.</span>
+      <span><strong>Tier:</strong> 😑 Mèh. Sub-par stuff.</span>
     </li>
     <li class="ml-4 mb-2 flex gap-2">
       <strong class="shrink-0">
@@ -52,7 +52,7 @@
       <strong class="shrink-0">
         <span class="w-8 text-black/90 text-center inline-block bg-F-tier">F</span>
       </strong>
-      <span><strong>Tier:</strong> 🤮 Abysmal!! The lowest possible tier for an item.</span>
+      <span><strong>Tier:</strong> 🤮 Abysmal!! Lowest of the lowest!</span>
     </li>
   </ul>
 </div>

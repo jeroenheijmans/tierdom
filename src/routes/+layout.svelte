@@ -7,14 +7,16 @@
 <div class="min-h-screen flex flex-col bg-gradient-to-b from-slate-800 to-slate-900 text-slate-100">
   <div class="px-2 md:px-4 mb-8">
     <div class="max-w-page mx-auto pb-4">
-      <nav class="flex flex-wrap gap-1 md:gap-4 pt-4">
-        <NavItem href="/">Home</NavItem>
-        <span class="hidden md:inline-block py-2">-</span>
-        <NavItem href="/tier-lists/games">Games</NavItem>
-        <NavItem href="/tier-lists/books">Books</NavItem>
-        <NavItem href="/tier-lists/movies">Movies</NavItem>
-        <span class="hidden md:inline-block py-2">-</span>
-        <NavItem href="/about">About</NavItem>
+      <nav class="flex gap-1 md:gap-4 pt-4">
+        <div class="flex flex-wrap gap-1 md:gap-4">
+          <NavItem href="/">Home</NavItem>
+          <span class="hidden md:inline-block py-2">-</span>
+          <NavItem href="/tier-lists/games">Games</NavItem>
+          <NavItem href="/tier-lists/books">Books</NavItem>
+          <NavItem href="/tier-lists/movies">Movies</NavItem>
+          <span class="hidden md:inline-block py-2">-</span>
+          <NavItem href="/about">About</NavItem>
+        </div>
         <div class="ml-auto flex flex-nowrap">
           <button
             aria-label="Toggle square tier list items"
