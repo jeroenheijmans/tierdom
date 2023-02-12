@@ -2,9 +2,12 @@
   export let href: string;
   import { page } from '$app/stores';
 
-  $: bg = $page.url.pathname == href ? 'bg-slate-100/30' : 'bg-slate-100/10';
+  $: bg =
+    $page.url.pathname == href
+      ? 'bg-gradient-to-b from-slate-400/30 via-slate-100/20 to-slate-400/30'
+      : 'bg-gradient-to-b from-slate-400/10 via-slate-100/10 to-slate-400/10';
 </script>
 
-<a {href} class={`hover:bg-slate-100/40 px-2 py-1 md:px-4 md:py-2 ${bg}`}>
+<a {href} class={`hover:bg-slate-500/20 hover:shadow-lg px-2 py-1 md:px-4 md:py-2 shadow border border-slate-900/10 rounded-sm ${bg}`}>
   <slot />
 </a>
