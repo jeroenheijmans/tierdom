@@ -18,7 +18,7 @@ const config = {
       manifest: false,
       pages: 'docs',
       assets: 'docs',
-      fallback: null,
+      fallback: '404.html',
       precompress: false,
       strict: true,
     }),
