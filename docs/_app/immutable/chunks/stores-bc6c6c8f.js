@@ -1,1 +1,0 @@
-import{w as t}from"./index-a869863a.js";var r=(e=>(e[e.square=0]="square",e[e.rectangle=1]="rectangle",e))(r||{});const a=t(0);function l(){a.update(()=>1)}function s(){a.update(()=>0)}export{r as L,l as a,a as l,s as t};

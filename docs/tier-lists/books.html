@@ -22,20 +22,21 @@
     <meta property="og:url" content="https://tierdom.jeroenheijmans.nl">
     <title>Tierdom JeroenHeijmans.nl</title>
     <meta http-equiv="content-security-policy" content="">
-		<link href="../_app/immutable/assets/_layout-f088eab7.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/start-59fd61be.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-1e48f5d8.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons-f058118c.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-a869863a.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/_layout.svelte-1f3fbfc4.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/A-e5ab3179.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores-77802b14.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores-bc6c6c8f.js">
-		<link rel="modulepreload" href="../_app/immutable/components/pages/tier-lists/books/_page.svelte-efaf89ba.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/TierContainer-10ddf646.js">
-		<link rel="modulepreload" href="../_app/immutable/modules/pages/tier-lists/books/_page.ts-caa0b42c.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/_page-e3465aa3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/util-aa14e3c2.js">
+		<link href="../_app/immutable/assets/_layout.f088eab7.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.34cef051.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.da24e4dd.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.a716cfaf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.04d7fa88.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.afe2b137.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/_layout.svelte.46b47a59.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/A.59ee758d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.0df75cbd.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.6ad9a115.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/tier-lists-books-page.svelte.7e42f136.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/TierContainer.8feacde5.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/tier-lists-books-page.ts.ec6062ec.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/_page.e59c63be.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/util.aa14e3c2.js">
   </head>
   <body data-sveltekit-preload-data="hover" class="overflow-y-scroll">
     <div style="display: contents">
@@ -593,22 +594,30 @@
 <a class="hover:text-slate-500" target="_blank" rel="noreferrer" href="https://github.com/jeroenheijmans/tierdom"><span class="underline">Tierdom Source</span><sup class="text-xs no-underline">↗</sup></a></div></div></footer></div>
 
 
-		<script type="module" data-sveltekit-hydrate="f30c52">
-			import { start } from "../_app/immutable/start-59fd61be.js";
+			
+			<script>
+				{
+					__sveltekit_1mbbfhx = {
+						env: {},
+						base: new URL("..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
 
-			start({
-				assets: "",
-				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="f30c52"]').parentNode,
-				version: "1677874311817",
-				hydrate: {
-					node_ids: [0, 4],
-					data: [{type:"data",data:null,uses:{}},null],
-					form: null,
-					error: null
+					const data = [{"type":"data","data":null,"uses":{}},null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.34cef051.js"),
+						import("../_app/immutable/entry/app.afe2b137.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_1mbbfhx.element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
   </body>
 </html>
