@@ -1,6 +1,6 @@
 <script lang="ts">
   import InfoBox from '$lib/components/InfoBox.svelte';
-  import { LayoutMode, layoutMode } from '$lib/stores';
+  import { layoutMode } from '$lib/stores';
   import type { Item } from '../_components/Item';
   import ItemModal from '../_components/ItemModal.svelte';
   import ItemRectangle from '../_components/ItemRectangle.svelte';
@@ -23,7 +23,7 @@
   {#each data.tierList.tiers as tier}
     <TierContainer {tier}>
       {#each tier.items as item}
-        {#if $layoutMode === LayoutMode.rectangle}
+        {#if $layoutMode === 'rows'}
           <ItemRectangle {item} />
         {:else}
           <ItemSquare on:click={() => (selected = item)} {item} />

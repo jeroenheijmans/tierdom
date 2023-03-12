@@ -1,15 +1,21 @@
-import { writable } from 'svelte/store';
+import { derived, writable, get } from 'svelte/store';
 
-export enum LayoutMode {
-  square,
-  rectangle,
-}
+import { goto } from '$app/navigation';
+import { page } from '$app/stores';
 
-export const layoutMode = writable(LayoutMode.square);
+export type Display = 'grid' | 'rows';
 
-export function toggleRectangleMode() {
-  layoutMode.update(() => LayoutMode.rectangle);
-}
-export function toggleSquareMode() {
-  layoutMode.update(() => LayoutMode.square);
-}
+export const layoutMode = (function () {
+  const { subscribe, set, update } = writable<Display>('grid');
+
+  return {
+    set,
+    subscribe,
+    toggle: (mode: Display) => {
+      const $page = get(page);
+      $page.url.searchParams.set('display', mode.toLocaleString());
+      goto(`?${$page.url.searchParams}`);
+      update(() => mode);
+    },
+  };
+})();
