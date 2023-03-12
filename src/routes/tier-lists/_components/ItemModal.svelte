@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { fade } from 'svelte/transition';
   import { createEventDispatcher } from 'svelte';
   import type { Item } from './Item';
 
@@ -6,9 +7,9 @@
   export let item: Item;
 </script>
 
-<div class="fixed top-0 left-0 h-screen w-screen z-50 flex">
+<div class="fixed top-0 left-0 h-screen w-screen z-50 flex backdrop-blur-sm" transition:fade={{ duration: 150 }}>
   <div
-    class="fixed top-0 left-0 h-screen w-screen bg-black/50 backdrop-blur-sm"
+    class="fixed top-0 left-0 h-screen w-screen bg-black/50"
     on:keydown={() => dispatch('dismiss')}
     on:click={() => dispatch('dismiss')}
   />
