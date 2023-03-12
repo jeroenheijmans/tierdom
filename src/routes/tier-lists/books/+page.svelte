@@ -1,18 +1,18 @@
 <script lang="ts">
   import InfoBox from '$lib/components/InfoBox.svelte';
   import { LayoutMode, layoutMode } from '$lib/stores';
-  import type { Item } from '../_components/Item';
   import ItemModal from '../_components/ItemModal.svelte';
   import ItemRectangle from '../_components/ItemRectangle.svelte';
   import ItemSquare from '../_components/ItemSquare.svelte';
   import TierContainer from '../_components/TierContainer.svelte';
+  import type { Book } from './Book';
 
   export let data: any;
-  let selected: Item | null = null;
+  let selected: Book | null = null;
 </script>
 
 {#if selected}
-  <ItemModal item={selected} on:dismiss={() => (selected = null)} />
+  <ItemModal item={selected} on:dismiss={() => (selected = null)}>ISBN {selected.isbn}</ItemModal>
 {/if}
 
 <InfoBox clazz="my-4">

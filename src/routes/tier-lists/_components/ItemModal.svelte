@@ -20,12 +20,13 @@
         class="absolute top-0 right-0 py-2 px-4 m-2 rounded bg-black/10 hover:bg-black/20">x</button
       >
       <h3 class="text-3xl font-bold">{item.title}</h3>
-      <p class="mt-2 font-bold">
-        <span class="uppercase">{item.mainProp}</span>
-        |
-        <span>{item.rating}/100</span>
-        |
-        <span class={`text-${item.tierLevel}-tier`}>{item.tierLevel}-tier</span>
+      <p class="mt-2 font-bold flex flex-wrap gap-1">
+        <span class={`bg-slate-600 px-2 py-1 text-${item.tierLevel}-tier`}>{item.tierLevel}-tier</span>
+        <span class="bg-slate-600 px-2 py-1 ">{item.rating}/100</span>
+        <span class="bg-slate-600 px-2 py-1 uppercase">{item.mainProp}</span>
+        {#if $$slots.default}
+          <span class="bg-slate-600 px-2 py-1"><slot /></span>
+        {/if}
       </p>
       <div class="my-4">
         {item.description}
