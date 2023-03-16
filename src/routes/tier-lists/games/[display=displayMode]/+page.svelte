@@ -1,17 +1,40 @@
 <script lang="ts">
+  import { afterNavigate, goto } from '$app/navigation';
+  import { page } from '$app/stores';
   import InfoBox from '$lib/components/InfoBox.svelte';
+  import { onMount } from 'svelte';
   import type { Item } from '../../_components/Item';
   import ItemModal from '../../_components/ItemModal.svelte';
   import ItemRectangle from '../../_components/ItemRectangle.svelte';
   import ItemSquare from '../../_components/ItemSquare.svelte';
   import TierContainer from '../../_components/TierContainer.svelte';
 
-  export let data: any;
+  export let data;
+
   let selected: Item | null = null;
+
+  function select(item: Item | null) {
+    selected = item;
+    const currentPath = $page.url.pathname;
+    const url = !item ? currentPath : `${currentPath}#${item.code}`;
+    goto(url);
+  }
+
+  function onHashChangedThroughBrowser() {
+    const hash = location.hash.substring(1);
+    selected = data.tierList.findByCode(hash);
+  }
+
+  onMount(() => {
+    const hash = $page.url.hash.substring(1);
+    selected = data.tierList.findByCode(hash);
+  });
 </script>
 
+<svelte:window on:hashchange={onHashChangedThroughBrowser} />
+
 {#if selected}
-  <ItemModal item={selected} on:dismiss={() => (selected = null)} />
+  <ItemModal item={selected} on:dismiss={() => select(null)} />
 {/if}
 
 <InfoBox clazz="my-4">
@@ -25,7 +48,7 @@
         {#if data.display === 'detailed'}
           <ItemRectangle {item} />
         {:else}
-          <ItemSquare on:click={() => (selected = item)} {item} />
+          <ItemSquare on:click={() => select(item)} {item} />
         {/if}
       {/each}
     </TierContainer>
