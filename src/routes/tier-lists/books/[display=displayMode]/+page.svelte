@@ -1,10 +1,9 @@
 <script lang="ts">
   import InfoBox from '$lib/components/InfoBox.svelte';
-  import { layoutMode } from '$lib/stores';
-  import ItemModal from '../_components/ItemModal.svelte';
-  import ItemRectangle from '../_components/ItemRectangle.svelte';
-  import ItemSquare from '../_components/ItemSquare.svelte';
-  import TierContainer from '../_components/TierContainer.svelte';
+  import ItemModal from '../../_components/ItemModal.svelte';
+  import ItemRectangle from '../../_components/ItemRectangle.svelte';
+  import ItemSquare from '../../_components/ItemSquare.svelte';
+  import TierContainer from '../../_components/TierContainer.svelte';
   import type { Book } from './Book';
 
   export let data: any;
@@ -26,7 +25,7 @@
   {#each data.tierList.tiers as tier}
     <TierContainer {tier}>
       {#each tier.items as item}
-        {#if $layoutMode === 'rows'}
+        {#if data.display === 'detailed'}
           <ItemRectangle {item}>, ISBN {item.isbn}</ItemRectangle>
         {:else}
           <ItemSquare {item} on:click={() => (selected = item)} />
