@@ -489,11 +489,11 @@ video {
 .left-0 {
   left: 0px;
 }
-.right-0 {
-  right: 0px;
-}
 .bottom-0 {
   bottom: 0px;
+}
+.right-0 {
+  right: 0px;
 }
 .z-10 {
   z-index: 10;
@@ -586,9 +586,6 @@ video {
 .h-6 {
   height: 1.5rem;
 }
-.h-screen {
-  height: 100vh;
-}
 .h-24 {
   height: 6rem;
 }
@@ -600,6 +597,9 @@ video {
 }
 .h-\[2px\] {
   height: 2px;
+}
+.max-h-full {
+  max-height: 100%;
 }
 .max-h-\[76px\] {
   max-height: 76px;
@@ -615,9 +615,6 @@ video {
 }
 .w-8 {
   width: 2rem;
-}
-.w-screen {
-  width: 100vw;
 }
 .w-\[800px\] {
   width: 800px;

@@ -41,14 +41,16 @@
   //////////////////////////////////////////////////////////////
 </script>
 
-<div class="fixed top-0 left-0 h-screen w-screen z-50 flex backdrop-blur-sm" transition:fade={{ duration: 150 }}>
+<div class="fixed top-0 left-0 bottom-0 right-0 z-50 flex backdrop-blur-sm" transition:fade={{ duration: 150 }}>
   <div
-    class="fixed top-0 left-0 h-screen w-screen bg-black/50"
+    class="fixed top-0 left-0 bottom-0 right-0 bg-black/50"
     on:keydown={() => dispatch('dismiss')}
     on:click={() => dispatch('dismiss')}
   />
-  <div class="m-4 md:m-auto w-[800px] overflow-y-auto">
-    <div class="p-2 md:px-8 md:py-4 m-2 border border-slate-900 rounded bg-slate-700 drop-shadow-[2px_4px_8px_rgba(0,0,0,0.5)]">
+  <div class="m-4 py-2 md:m-auto w-[800px] max-h-full">
+    <div
+      class="p-2 md:px-8 md:py-4 m-2 max-h-full overflow-y-auto border border-slate-900 rounded bg-slate-700 drop-shadow-[2px_4px_8px_rgba(0,0,0,0.5)]"
+    >
       <button
         on:click={() => dispatch('dismiss')}
         aria-label="Close"
