@@ -1,7 +1,7 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
   import { createEventDispatcher, onDestroy, onMount } from 'svelte';
-  import type { Item } from './Item';
+  import type { Item } from '$lib/models/Item';
 
   const dispatch = createEventDispatcher();
   export let item: Item;

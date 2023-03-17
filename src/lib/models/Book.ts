@@ -1,5 +1,5 @@
-import { ratingToHsl } from '$lib/components/util';
-import type { Item } from '../../_components/Item';
+import { ratingToHsl } from '$lib/models/util';
+import type { Item } from '$lib/models/Item';
 
 // Separating parts of an ISBN is hard because
 // the parts may have varying lengths. So, we

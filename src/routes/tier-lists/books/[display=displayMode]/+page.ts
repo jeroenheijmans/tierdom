@@ -1,6 +1,6 @@
 import { books } from '$lib/data/books';
-import { TierList } from '../../_components/TierList';
-import { Book } from './Book';
+import { TierList } from '$lib/models/TierList';
+import { Book } from '$lib/models/Book';
 
 export const load = ({ params }) => {
   const tierList = new TierList<Book>();

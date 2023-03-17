@@ -1,5 +1,6 @@
 <script lang="ts">
-  import type { Item } from './Item';
+  import type { Item } from '$lib/models/Item';
+
   export let item: Item;
   export let clazz: string = '';
 

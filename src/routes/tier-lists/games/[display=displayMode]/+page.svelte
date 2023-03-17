@@ -1,13 +1,15 @@
 <script lang="ts">
   import { goto } from '$app/navigation';
   import { page } from '$app/stores';
-  import InfoBox from '$lib/components/InfoBox.svelte';
   import { onMount } from 'svelte';
-  import type { Item } from '../../_components/Item';
-  import ItemModal from '../../_components/ItemModal.svelte';
-  import ItemRectangle from '../../_components/ItemRectangle.svelte';
-  import ItemSquare from '../../_components/ItemSquare.svelte';
-  import TierContainer from '../../_components/TierContainer.svelte';
+
+  import type { Item } from '$lib/models/Item';
+
+  import InfoBox from '$lib/components/InfoBox.svelte';
+  import ItemModal from '$lib/components/ItemModal.svelte';
+  import ItemRectangle from '$lib/components/ItemRectangle.svelte';
+  import ItemSquare from '$lib/components/ItemSquare.svelte';
+  import TierContainer from '$lib/components/TierContainer.svelte';
 
   export let data;
 

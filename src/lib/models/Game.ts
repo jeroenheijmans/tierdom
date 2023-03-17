@@ -1,5 +1,5 @@
-import { ratingToHsl } from '$lib/components/util';
-import type { Item } from '../_components/Item';
+import { ratingToHsl } from './util';
+import type { Item } from './Item';
 
 export class Game implements Item {
   tierLevel: string;
