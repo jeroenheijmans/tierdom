@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fade } from 'svelte/transition';
-  import { createEventDispatcher } from 'svelte';
+  import { createEventDispatcher, onDestroy, onMount } from 'svelte';
   import type { Item } from './Item';
 
   const dispatch = createEventDispatcher();
@@ -16,6 +16,29 @@
     E: '😠',
     F: '🤮',
   };
+
+  //////////////////////////////////////////////////////////////
+  // Big old mess of a workaround to ensure the body will remain
+  // at the right position before/after showing the modal, while
+  // keeping the scrollbar on the side, while also not allowing
+  // the body to scroll when the overlay is visible.
+  //
+  // See also: https://stackoverflow.com/q/8701754/419956
+  // See also: https://stackoverflow.com/a/63260588/419956
+  let top: number = 0;
+  onMount(() => {
+    top = document.documentElement.scrollTop;
+    document.body.style.top = -top + 'px';
+    document.body.style.inlineSize = '100%';
+    document.body.classList.add('fixed');
+  });
+  onDestroy(() => {
+    document.body.style.top = 'auto';
+    document.body.style.inlineSize = 'auto';
+    document.body.classList.remove('fixed');
+    document.documentElement.scrollTop = top;
+  });
+  //////////////////////////////////////////////////////////////
 </script>
 
 <div class="fixed top-0 left-0 h-screen w-screen z-50 flex backdrop-blur-sm" transition:fade={{ duration: 150 }}>
@@ -24,14 +47,14 @@
     on:keydown={() => dispatch('dismiss')}
     on:click={() => dispatch('dismiss')}
   />
-  <div class="m-auto w-[800px]">
+  <div class="m-4 md:m-auto w-[800px] overflow-y-auto">
     <div class="p-2 md:px-8 md:py-4 m-2 border border-slate-900 rounded bg-slate-700 drop-shadow-[2px_4px_8px_rgba(0,0,0,0.5)]">
       <button
         on:click={() => dispatch('dismiss')}
         aria-label="Close"
         class="absolute top-0 right-0 py-2 px-4 m-2 rounded bg-black/10 hover:bg-black/20">x</button
       >
-      <h3 class="text-3xl font-bold">{item.title}</h3>
+      <h3 class="text-3xl font-bold pr-12">{item.title}</h3>
       <p class="mt-2 font-bold flex flex-wrap gap-1">
         <span class={`bg-slate-600 px-2 py-1 text-${item.tierLevel}-tier`}>{tierEmojiMap[item.tierLevel]} {item.tierLevel}-tier</span>
         <span class="bg-slate-600 px-2 py-1 ">{item.rating}/100</span>
