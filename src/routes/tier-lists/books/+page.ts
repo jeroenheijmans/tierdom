@@ -1,11 +1,5 @@
-import { books } from '$lib/data/books';
-import { TierList } from '../_components/TierList';
-import { Book } from './Book';
+import { redirect } from '@sveltejs/kit';
 
-export const load = () => {
-  const tierList = new TierList<Book>();
-  books.forEach((b) => tierList.level[b.tierLevel].items.push(new Book(b)));
-  return {
-    tierList,
-  };
-};
+export function load() {
+  throw redirect(302, '/tier-lists/books/overview');
+}

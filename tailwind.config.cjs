@@ -3,7 +3,7 @@ module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   safelist: [
     {
-      pattern: /(border|bg)-(S|A|B|C|D|E|F)-tier/,
+      pattern: /(border|bg|text)-(S|A|B|C|D|E|F)-tier/,
     },
   ],
   theme: {

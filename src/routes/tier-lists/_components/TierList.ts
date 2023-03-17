@@ -1,10 +1,12 @@
-export interface Tier<T> {
+import type { Item } from './Item';
+
+export interface Tier<T extends Item> {
   level: string;
   items: T[];
   description: string;
 }
 
-export class TierList<T> {
+export class TierList<T extends Item> {
   tiers: Tier<T>[];
   level: { [key: string]: Tier<T> } = {};
 
@@ -20,5 +22,14 @@ export class TierList<T> {
 
     // Allow consumers to iterate over all tiers:
     this.tiers = Object.values(this.level);
+  }
+
+  findByCode(code: string): T | null {
+    for (const tier of this.tiers) {
+      for (const item of tier.items) {
+        if (item.code === code) return item;
+      }
+    }
+    return null;
   }
 }

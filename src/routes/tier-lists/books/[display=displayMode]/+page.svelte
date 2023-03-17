@@ -1,11 +1,41 @@
 <script lang="ts">
+  import { goto } from '$app/navigation';
+  import { page } from '$app/stores';
   import InfoBox from '$lib/components/InfoBox.svelte';
-  import { LayoutMode, layoutMode } from '$lib/stores';
-  import ItemRectangle from '../_components/ItemRectangle.svelte';
-  import ItemSquare from '../_components/ItemSquare.svelte';
-  import TierContainer from '../_components/TierContainer.svelte';
-  export let data: any;
+  import { onMount } from 'svelte';
+  import ItemModal from '../../_components/ItemModal.svelte';
+  import ItemRectangle from '../../_components/ItemRectangle.svelte';
+  import ItemSquare from '../../_components/ItemSquare.svelte';
+  import TierContainer from '../../_components/TierContainer.svelte';
+  import type { Book } from './Book';
+
+  export let data;
+
+  let selected: Book | null = null;
+
+  function select(item: Book | null) {
+    selected = item;
+    const currentPath = $page.url.pathname;
+    const url = !item ? currentPath : `${currentPath}#${item.code}`;
+    goto(url, { noScroll: true });
+  }
+
+  function onHashChangedThroughBrowser() {
+    const hash = location.hash.substring(1);
+    selected = data.tierList.findByCode(hash);
+  }
+
+  onMount(() => {
+    const hash = $page.url.hash.substring(1);
+    selected = data.tierList.findByCode(hash);
+  });
 </script>
+
+<svelte:window on:hashchange={onHashChangedThroughBrowser} />
+
+{#if selected}
+  <ItemModal item={selected} on:dismiss={() => select(null)}>ISBN {selected.isbn}</ItemModal>
+{/if}
 
 <InfoBox clazz="my-4">
   <p>
@@ -18,10 +48,10 @@
   {#each data.tierList.tiers as tier}
     <TierContainer {tier}>
       {#each tier.items as item}
-        {#if $layoutMode === LayoutMode.rectangle}
+        {#if data.display === 'detailed'}
           <ItemRectangle {item}>, ISBN {item.isbn}</ItemRectangle>
         {:else}
-          <ItemSquare {item} />
+          <ItemSquare {item} on:click={() => select(item)} />
         {/if}
       {/each}
     </TierContainer>
