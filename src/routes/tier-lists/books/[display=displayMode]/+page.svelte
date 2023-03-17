@@ -17,7 +17,7 @@
     selected = item;
     const currentPath = $page.url.pathname;
     const url = !item ? currentPath : `${currentPath}#${item.code}`;
-    goto(url);
+    goto(url, { noScroll: true });
   }
 
   function onHashChangedThroughBrowser() {

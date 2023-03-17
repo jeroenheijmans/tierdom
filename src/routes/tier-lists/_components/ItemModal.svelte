@@ -5,6 +5,17 @@
 
   const dispatch = createEventDispatcher();
   export let item: Item;
+
+  // TODO: Deduplicate from AboutTierLists.svelte
+  const tierEmojiMap: Record<string, string> = {
+    S: '🤩',
+    A: '😁',
+    B: '😊',
+    C: '🙂',
+    D: '😑',
+    E: '😠',
+    F: '🤮',
+  };
 </script>
 
 <div class="fixed top-0 left-0 h-screen w-screen z-50 flex backdrop-blur-sm" transition:fade={{ duration: 150 }}>
@@ -22,7 +33,7 @@
       >
       <h3 class="text-3xl font-bold">{item.title}</h3>
       <p class="mt-2 font-bold flex flex-wrap gap-1">
-        <span class={`bg-slate-600 px-2 py-1 text-${item.tierLevel}-tier`}>{item.tierLevel}-tier</span>
+        <span class={`bg-slate-600 px-2 py-1 text-${item.tierLevel}-tier`}>{tierEmojiMap[item.tierLevel]} {item.tierLevel}-tier</span>
         <span class="bg-slate-600 px-2 py-1 ">{item.rating}/100</span>
         <span class="bg-slate-600 px-2 py-1 uppercase">{item.mainProp}</span>
         {#if $$slots.default}

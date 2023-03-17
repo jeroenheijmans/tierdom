@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { afterNavigate, goto } from '$app/navigation';
+  import { goto } from '$app/navigation';
   import { page } from '$app/stores';
   import InfoBox from '$lib/components/InfoBox.svelte';
   import { onMount } from 'svelte';
@@ -17,7 +17,7 @@
     selected = item;
     const currentPath = $page.url.pathname;
     const url = !item ? currentPath : `${currentPath}#${item.code}`;
-    goto(url);
+    goto(url, { noScroll: true });
   }
 
   function onHashChangedThroughBrowser() {
