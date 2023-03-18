@@ -47,14 +47,14 @@
     on:keydown={() => dispatch('dismiss')}
     on:click={() => dispatch('dismiss')}
   />
-  <div class="m-4 py-2 md:m-auto w-[800px] max-h-full">
+  <div class="m-4 py-4 md:m-auto w-[800px] max-h-full">
     <div
       class="p-2 md:px-8 md:py-4 m-2 max-h-full overflow-y-auto border border-slate-900 rounded bg-slate-700 drop-shadow-[2px_4px_8px_rgba(0,0,0,0.5)]"
     >
       <button
         on:click={() => dispatch('dismiss')}
         aria-label="Close"
-        class="absolute top-0 right-0 py-2 px-4 m-2 rounded bg-black/10 hover:bg-black/20">x</button
+        class="float-right py-2 px-4 ml-2 mb-2 rounded bg-black/10 hover:bg-black/20">x</button
       >
       <h3 class="text-3xl font-bold pr-12">{item.title}</h3>
       <p class="mt-2 font-bold flex flex-wrap gap-1">
