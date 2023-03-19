@@ -1,0 +1,22 @@
+<svg width="217" height="94" viewBox="0 0 217 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17 6.5H201C207.351 6.5 212.5 11.6487 212.5 18V68C212.5 78.7696 203.77 87.5 193 87.5H25C14.2304 87.5 5.5 78.7696 5.5 68V18C5.5 11.6487 10.6487 6.5 17 6.5Z" stroke="black"/>
+<circle cx="196.5" cy="18.5" r="3" stroke="black"/>
+<circle cx="201.5" cy="12.5" r="3" stroke="black"/>
+<circle cx="201.5" cy="24.5" r="3" stroke="black"/>
+<circle cx="206.5" cy="18.5" r="3" stroke="black"/>
+<circle cx="182.5" cy="22.5" r="5" stroke="black"/>
+<circle cx="36.5" cy="22.5" r="5" stroke="black"/>
+<circle cx="182.5" cy="22.5" r="9" stroke="black"/>
+<circle cx="36.5" cy="22.5" r="9" stroke="black"/>
+<rect x="187.5" y="9.5" width="5" height="2" rx="1" stroke="black"/>
+<rect x="173.5" y="61.5" width="11" height="4" rx="2" stroke="black"/>
+<rect x="34.5" y="61.5" width="11" height="4" rx="2" stroke="black"/>
+<rect x="25.5" y="9.5" width="6" height="2" rx="1" stroke="black"/>
+<rect x="173.5" y="34.5" width="22" height="23" rx="1.5" stroke="black"/>
+<rect x="23.5" y="34.5" width="22" height="23" rx="1.5" stroke="black"/>
+<rect x="48.5" y="9.5" width="122" height="74" rx="0.5" stroke="black"/>
+<rect x="54.5" y="13.5" width="110" height="66" rx="0.5" stroke="black"/>
+<path d="M13 16.5H13.5V16V12C13.5 11.7239 13.7239 11.5 14 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12V16V16.5H20H24C24.2761 16.5 24.5 16.7239 24.5 17V22C24.5 22.2761 24.2761 22.5 24 22.5H20H19.5V23V27C19.5 27.2761 19.2761 27.5 19 27.5H14C13.7239 27.5 13.5 27.2761 13.5 27V23V22.5H13H9C8.72386 22.5 8.5 22.2761 8.5 22V17C8.5 16.7239 8.72386 16.5 9 16.5H13Z" stroke="black"/>
+<path d="M212.5 34.5C200.5 34.5 202 33 202 46.5C202 58 200.5 60.5 192.5 71.5L180 87.5" stroke="black"/>
+<path d="M6 34.5C18 34.5 16.5 33 16.5 46.5C16.5 58 18 60.5 26 71.5L38.5 87.5" stroke="black"/>
+</svg>
