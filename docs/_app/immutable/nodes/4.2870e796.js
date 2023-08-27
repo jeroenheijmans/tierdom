@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/index.d7eb2526.js";function o(){throw e(302,"/tier-lists/books/overview")}const t=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{t as universal};

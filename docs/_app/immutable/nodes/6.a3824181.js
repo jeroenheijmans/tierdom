@@ -1,1 +1,0 @@
-import{r as e}from"../chunks/index.ade5cbd2.js";function r(){throw e(302,"/tier-lists/games/overview")}const t=Object.freeze(Object.defineProperty({__proto__:null,load:r},Symbol.toStringTag,{value:"Module"}));export{t as universal};
