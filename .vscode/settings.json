@@ -6,5 +6,16 @@
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  "cSpell.words": ["clazz", "freakonomics", "gameboy", "gamecube", "Mmmhhh", "snes", "steamdeck", "tailwindcss", "Tierdom"]
+  "cSpell.words": [
+    "clazz",
+    "freakonomics",
+    "gameboy",
+    "gamecube",
+    "Mmmhhh",
+    "roguelite",
+    "snes",
+    "steamdeck",
+    "tailwindcss",
+    "Tierdom"
+  ]
 }
