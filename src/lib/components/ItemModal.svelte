@@ -46,6 +46,8 @@
     class="fixed top-0 left-0 bottom-0 right-0 bg-black/50"
     on:keydown={() => dispatch('dismiss')}
     on:click={() => dispatch('dismiss')}
+    role="button"
+    tabindex="0"
   />
   <div class="m-4 py-4 md:m-auto w-[800px] max-h-full">
     <div
@@ -59,7 +61,7 @@
       <h3 class="text-3xl font-bold pr-12">{item.title}</h3>
       <p class="mt-2 font-bold flex flex-wrap gap-1">
         <span class={`bg-slate-600 px-2 py-1 text-${item.tierLevel}-tier`}>{tierEmojiMap[item.tierLevel]} {item.tierLevel}-tier</span>
-        <span class="bg-slate-600 px-2 py-1 ">{item.rating}/100</span>
+        <span class="bg-slate-600 px-2 py-1">{item.rating}/100</span>
         <span class="bg-slate-600 px-2 py-1 uppercase">{item.mainProp}</span>
         {#if $$slots.default}
           <span class="bg-slate-600 px-2 py-1"><slot /></span>
