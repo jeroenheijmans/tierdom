@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/B90CZVMX.js";function o(){e(302,"/tier-lists/books/overview")}const t=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{t as universal};

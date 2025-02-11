@@ -37,7 +37,7 @@
       <p class="p-2 pb-4">{item.description}</p>
     </div>
     <div class="h-[2px] w-full absolute bottom-0 bg-slate-400 opacity-70 transition-all group-hover:h-[8px] group-hover:opacity-80">
-      <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`} />
+      <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`}></div>
     </div>
   </div>
 </div>

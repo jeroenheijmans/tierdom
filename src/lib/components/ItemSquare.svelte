@@ -46,7 +46,7 @@
       transition-all md:group-hover:h-[16px] md:group-hover:opacity-80
     "
     >
-      <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`} />
+      <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`}></div>
     </div>
   </div>
 </button>

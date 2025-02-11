@@ -48,7 +48,7 @@
     on:click={() => dispatch('dismiss')}
     role="button"
     tabindex="0"
-  />
+  ></div>
   <div class="m-4 py-4 md:m-auto w-[800px] max-h-full">
     <div
       class="p-2 md:px-8 md:py-4 m-2 max-h-full overflow-y-auto border border-slate-900 rounded bg-slate-700 drop-shadow-[2px_4px_8px_rgba(0,0,0,0.5)]"
@@ -79,7 +79,7 @@
         {/if}
       </div>
       <div class="h-[4px] mt-4 bg-slate-400 opacity-70">
-        <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`} />
+        <div class="h-full" style={`width: ${item.rating}%; background-color: ${item.ratingColor}`}></div>
       </div>
     </div>
   </div>
