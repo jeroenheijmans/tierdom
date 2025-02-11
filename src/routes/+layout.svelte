@@ -12,14 +12,15 @@
   <div class="mb-8">
     <div class="pb-4">
       <div class="sticky top-0 py-1 md:py-2 border-b border-b-slate-900/20 bg-slate-700 z-10 drop-shadow-[0_4px_2px_rgba(0,0,0,0.25)]">
-        <nav class="flex gap-1 md:gap-4 max-w-page mx-auto px-2 md:px-4 ">
+        <nav class="flex gap-1 md:gap-4 max-w-page mx-auto px-2 md:px-4">
           <div class="flex flex-wrap items-center gap-1 md:gap-4">
             <NavItem route="/">Home</NavItem>
-            <span class="hidden md:inline-block w-2" />
+            <span class="hidden md:inline-block w-2"></span>
             <NavItem route="/tier-lists/games">Games</NavItem>
             <NavItem route="/tier-lists/books">Books</NavItem>
             <NavItem route="/tier-lists/movies">Movies</NavItem>
-            <span class="hidden md:inline-block w-2" />
+            <NavItem route="/tier-lists/board-games">Board Games</NavItem>
+            <span class="hidden md:inline-block w-2"></span>
             <NavItem route="/about">About</NavItem>
           </div>
           {#if showDisplayModeSwitcher}
@@ -29,7 +30,7 @@
           {/if}
         </nav>
       </div>
-      <div class="max-w-page mx-auto px-2 md:px-4 ">
+      <div class="max-w-page mx-auto px-2 md:px-4">
         <slot />
       </div>
     </div>
